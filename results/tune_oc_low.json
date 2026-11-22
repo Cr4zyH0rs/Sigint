@@ -1,0 +1,1582 @@
+[
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-8_500",
+  "snr": -6.256257171223588,
+  "bw": null,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": -2.3069067741569245,
+    "chars": 15,
+    "symbols": 3
+   },
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": 2.8414219724450893,
+    "chars": 36,
+    "symbols": 0
+   },
+   "Cont-16/500": {
+    "score": -21.600598491973575,
+    "chars": 28,
+    "symbols": 6
+   },
+   "Cont-8/500": {
+    "score": -53.06427017806217,
+    "chars": 71,
+    "symbols": 24
+   },
+   "OLIVIA-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-8_500",
+  "snr": -0.9694301126991736,
+  "bw": 483.3984375,
+  "fam": "contestia",
+  "scores": {
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -11.600873130309788,
+    "chars": 24,
+    "symbols": 8
+   },
+   "Cont-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/500": {
+    "score": 8.920184768195174,
+    "chars": 81,
+    "symbols": 0
+   }
+  }
+ },
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-16_500",
+  "snr": -0.8317587784231222,
+  "bw": 486.328125,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-16/500": {
+    "score": -5.649524094964903,
+    "chars": 15,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -12.77747304030864,
+    "chars": 20,
+    "symbols": 7
+   },
+   "Cont-16/500": {
+    "score": -18.853637612953463,
+    "chars": 30,
+    "symbols": 11
+   },
+   "Cont-8/500": {
+    "score": -43.578057383411114,
+    "chars": 57,
+    "symbols": 20
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-8_250",
+  "snr": -4.944479728060066,
+  "bw": 234.375,
+  "fam": "contestia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": 4.687366429541113,
+    "chars": 36,
+    "symbols": 0
+   }
+  }
+ },
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-16_500",
+  "snr": -2.296311609610342,
+  "bw": 313.4765625,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": -4.770360331457883,
+    "chars": 3,
+    "symbols": 1
+   },
+   "Cont-8/250": {
+    "score": -8.83609729089472,
+    "chars": 24,
+    "symbols": 10
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-8_250",
+  "snr": -3.528426435272486,
+  "bw": 246.09375,
+  "fam": "contestia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": 7.657276723714277,
+    "chars": 32,
+    "symbols": 0
+   }
+  }
+ },
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-16_500",
+  "snr": -5.714452645678505,
+  "bw": null,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": -0.331237729375744,
+    "chars": 1,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": -17.95391894567906,
+    "chars": 24,
+    "symbols": 7
+   },
+   "OLIVIA-16/500": {
+    "score": -5.901262056196519,
+    "chars": 18,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -14.360571633532594,
+    "chars": 18,
+    "symbols": 3
+   },
+   "Cont-16/500": {
+    "score": -26.55682215817286,
+    "chars": 32,
+    "symbols": 12
+   },
+   "Cont-8/500": {
+    "score": -46.464522499108135,
+    "chars": 66,
+    "symbols": 29
+   },
+   "OLIVIA-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-32/1K": {
+    "score": -20.103240968001884,
+    "chars": 44,
+    "symbols": 14
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-8_250",
+  "snr": -2.8062044532874104,
+  "bw": 251.953125,
+  "fam": "contestia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": 7.46529540172827,
+    "chars": 36,
+    "symbols": 0
+   }
+  }
+ },
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-8_500",
+  "snr": -9.489713464678752,
+  "bw": null,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": -3.36642048145147,
+    "chars": 10,
+    "symbols": 2
+   },
+   "OLIVIA-16/500": {
+    "score": -3.0,
+    "chars": 4,
+    "symbols": 3
+   },
+   "OLIVIA-8/500": {
+    "score": -5.016617924801872,
+    "chars": 35,
+    "symbols": 0
+   },
+   "Cont-16/500": {
+    "score": -24.352483898057294,
+    "chars": 22,
+    "symbols": 7
+   },
+   "Cont-8/500": {
+    "score": -44.49309839132446,
+    "chars": 66,
+    "symbols": 26
+   },
+   "OLIVIA-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-32_1K",
+  "snr": -7.611120507441155,
+  "bw": null,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": -1.4429607660251733,
+    "chars": 3,
+    "symbols": 1
+   },
+   "Cont-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -13.782973540157988,
+    "chars": 21,
+    "symbols": 11
+   },
+   "Cont-16/500": {
+    "score": -26.559811239996762,
+    "chars": 32,
+    "symbols": 11
+   },
+   "Cont-8/500": {
+    "score": -41.12653827852366,
+    "chars": 60,
+    "symbols": 26
+   },
+   "OLIVIA-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-32/1K": {
+    "score": -24.375874360723824,
+    "chars": 30,
+    "symbols": 19
+   }
+  }
+ },
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-8_500",
+  "snr": -8.21509585968072,
+  "bw": null,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": -1.5459693259015717,
+    "chars": 2,
+    "symbols": 1
+   },
+   "Cont-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -8.333875481794113,
+    "chars": 38,
+    "symbols": 2
+   },
+   "Cont-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/500": {
+    "score": -44.587000343015646,
+    "chars": 65,
+    "symbols": 28
+   },
+   "OLIVIA-32/1K": {
+    "score": -1.3450831539889185,
+    "chars": 4,
+    "symbols": 2
+   },
+   "Cont-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-16_500",
+  "snr": -2.793317748662421,
+  "bw": 237.3046875,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": -2.0,
+    "chars": 2,
+    "symbols": 2
+   },
+   "Cont-8/250": {
+    "score": -8.555036921972839,
+    "chars": 11,
+    "symbols": 4
+   }
+  }
+ },
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-8_250",
+  "snr": -8.55787786921326,
+  "bw": null,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": -0.655619670886975,
+    "chars": 13,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": -12.544751936213178,
+    "chars": 24,
+    "symbols": 9
+   },
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -26.455013669631676,
+    "chars": 21,
+    "symbols": 7
+   },
+   "Cont-16/500": {
+    "score": -17.18231552115475,
+    "chars": 28,
+    "symbols": 8
+   },
+   "Cont-8/500": {
+    "score": -33.678061686355655,
+    "chars": 43,
+    "symbols": 12
+   },
+   "OLIVIA-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-32/1K": {
+    "score": -27.42382080965219,
+    "chars": 42,
+    "symbols": 15
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-16_500",
+  "snr": -9.085768816976715,
+  "bw": null,
+  "fam": "contestia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": -5.994678250863123,
+    "chars": 10,
+    "symbols": 3
+   },
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -11.024432914165399,
+    "chars": 15,
+    "symbols": 7
+   },
+   "Cont-16/500": {
+    "score": 1.263231651898133,
+    "chars": 44,
+    "symbols": 0
+   },
+   "Cont-8/500": {
+    "score": -39.089952388266674,
+    "chars": 70,
+    "symbols": 22
+   },
+   "OLIVIA-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-32/1K": {
+    "score": -15.585440716959331,
+    "chars": 23,
+    "symbols": 11
+   }
+  }
+ },
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-16_500",
+  "snr": -9.40044895315834,
+  "bw": null,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": -13.767862638258755,
+    "chars": 22,
+    "symbols": 10
+   },
+   "OLIVIA-16/500": {
+    "score": 1.1475758771405196,
+    "chars": 15,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -18.116408643956028,
+    "chars": 18,
+    "symbols": 8
+   },
+   "Cont-16/500": {
+    "score": -23.431485080591635,
+    "chars": 32,
+    "symbols": 16
+   },
+   "Cont-8/500": {
+    "score": -35.58930460526919,
+    "chars": 62,
+    "symbols": 27
+   },
+   "OLIVIA-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-32/1K": {
+    "score": -20.205513970098632,
+    "chars": 39,
+    "symbols": 15
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-8_250",
+  "snr": -9.37286174444058,
+  "bw": null,
+  "fam": "contestia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": -2.469108030414122,
+    "chars": 3,
+    "symbols": 2
+   },
+   "Cont-8/250": {
+    "score": 7.745994446597141,
+    "chars": 32,
+    "symbols": 0
+   },
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -5.533952347924533,
+    "chars": 18,
+    "symbols": 7
+   },
+   "Cont-16/500": {
+    "score": -20.89461049207558,
+    "chars": 26,
+    "symbols": 11
+   },
+   "Cont-8/500": {
+    "score": -43.96135336533369,
+    "chars": 64,
+    "symbols": 22
+   },
+   "OLIVIA-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   }
+  }
+ },
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-32_1K",
+  "snr": -5.240168550038893,
+  "bw": null,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": -1.098194863601865,
+    "chars": 5,
+    "symbols": 2
+   },
+   "Cont-8/250": {
+    "score": -3.7364639847798724,
+    "chars": 20,
+    "symbols": 7
+   },
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -7.996011624105421,
+    "chars": 18,
+    "symbols": 6
+   },
+   "Cont-16/500": {
+    "score": -27.980296876311545,
+    "chars": 36,
+    "symbols": 19
+   },
+   "Cont-8/500": {
+    "score": -40.31435199483458,
+    "chars": 65,
+    "symbols": 27
+   },
+   "OLIVIA-32/1K": {
+    "score": -9.0,
+    "chars": 15,
+    "symbols": 9
+   },
+   "Cont-32/1K": {
+    "score": -22.168885508995317,
+    "chars": 39,
+    "symbols": 12
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-8_500",
+  "snr": -8.30648132105483,
+  "bw": null,
+  "fam": "contestia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": -2.4429607660251733,
+    "chars": 5,
+    "symbols": 2
+   },
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -28.28015434686384,
+    "chars": 20,
+    "symbols": 7
+   },
+   "Cont-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/500": {
+    "score": 11.628693048398627,
+    "chars": 81,
+    "symbols": 0
+   },
+   "OLIVIA-32/1K": {
+    "score": -6.160872357349497,
+    "chars": 8,
+    "symbols": 2
+   },
+   "Cont-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   }
+  }
+ },
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-8_500",
+  "snr": -3.2543251678630725,
+  "bw": 216.796875,
+  "fam": null,
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-32_1K",
+  "snr": -6.549879878457676,
+  "bw": null,
+  "fam": "contestia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": -6.273563230027987,
+    "chars": 11,
+    "symbols": 7
+   },
+   "OLIVIA-16/500": {
+    "score": -4.581008010761869,
+    "chars": 4,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -18.325335642553583,
+    "chars": 18,
+    "symbols": 10
+   },
+   "Cont-16/500": {
+    "score": -21.397471373971623,
+    "chars": 27,
+    "symbols": 8
+   },
+   "Cont-8/500": {
+    "score": -22.817570034277008,
+    "chars": 34,
+    "symbols": 16
+   },
+   "OLIVIA-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-32/1K": {
+    "score": 7.427489932576025,
+    "chars": 54,
+    "symbols": 0
+   }
+  }
+ },
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-16_500",
+  "snr": -2.0539757586428316,
+  "bw": 457.03125,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-16/500": {
+    "score": -5.143759869900209,
+    "chars": 14,
+    "symbols": 1
+   },
+   "OLIVIA-8/500": {
+    "score": -20.043943908394205,
+    "chars": 18,
+    "symbols": 12
+   },
+   "Cont-16/500": {
+    "score": -30.858145049938003,
+    "chars": 35,
+    "symbols": 9
+   },
+   "Cont-8/500": {
+    "score": -58.85125879927267,
+    "chars": 65,
+    "symbols": 28
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-16_500",
+  "snr": -1.859819079931972,
+  "bw": 366.2109375,
+  "fam": null,
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.04545126290391736,
+    "chars": 3,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": -4.768611395390877,
+    "chars": 9,
+    "symbols": 2
+   }
+  }
+ },
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-16_500",
+  "snr": -5.637798514923754,
+  "bw": null,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": -3.0,
+    "chars": 3,
+    "symbols": 3
+   },
+   "Cont-8/250": {
+    "score": -5.026422303520746,
+    "chars": 13,
+    "symbols": 2
+   },
+   "OLIVIA-16/500": {
+    "score": -0.6991004721521767,
+    "chars": 13,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -19.53235481421685,
+    "chars": 19,
+    "symbols": 4
+   },
+   "Cont-16/500": {
+    "score": -27.858220939391416,
+    "chars": 30,
+    "symbols": 12
+   },
+   "Cont-8/500": {
+    "score": -49.71475833379287,
+    "chars": 64,
+    "symbols": 28
+   },
+   "OLIVIA-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-32/1K": {
+    "score": -25.16092072267149,
+    "chars": 43,
+    "symbols": 15
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-32_1K",
+  "snr": -4.534027084377201,
+  "bw": null,
+  "fam": "contestia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": -8.73840938162154,
+    "chars": 15,
+    "symbols": 8
+   },
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -7.807441725613115,
+    "chars": 16,
+    "symbols": 4
+   },
+   "Cont-16/500": {
+    "score": -9.010577731396582,
+    "chars": 22,
+    "symbols": 6
+   },
+   "Cont-8/500": {
+    "score": -36.94260061636007,
+    "chars": 50,
+    "symbols": 23
+   },
+   "OLIVIA-32/1K": {
+    "score": -3.6900719140430174,
+    "chars": 5,
+    "symbols": 2
+   },
+   "Cont-32/1K": {
+    "score": 11.881469964333755,
+    "chars": 54,
+    "symbols": 0
+   }
+  }
+ },
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-8_250",
+  "snr": -6.655784917900752,
+  "bw": 14.6484375,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 1.3531093643453886,
+    "chars": 11,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": -13.204262364476556,
+    "chars": 18,
+    "symbols": 9
+   },
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -18.292646992384803,
+    "chars": 20,
+    "symbols": 8
+   },
+   "Cont-16/500": {
+    "score": -21.621707810718114,
+    "chars": 29,
+    "symbols": 13
+   },
+   "Cont-8/500": {
+    "score": -33.979625824998486,
+    "chars": 65,
+    "symbols": 19
+   },
+   "OLIVIA-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-32/1K": {
+    "score": -25.394585453932553,
+    "chars": 30,
+    "symbols": 16
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-8_500",
+  "snr": -7.9788948391078875,
+  "bw": null,
+  "fam": "contestia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": -8.690819723678016,
+    "chars": 9,
+    "symbols": 3
+   },
+   "Cont-8/250": {
+    "score": -3.2856544954598563,
+    "chars": 9,
+    "symbols": 4
+   },
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -11.262439055864588,
+    "chars": 15,
+    "symbols": 3
+   },
+   "Cont-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/500": {
+    "score": 7.196593812900638,
+    "chars": 84,
+    "symbols": 0
+   },
+   "OLIVIA-32/1K": {
+    "score": -0.9308420214278801,
+    "chars": 5,
+    "symbols": 1
+   },
+   "Cont-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   }
+  }
+ },
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-32_1K",
+  "snr": -1.7840691959679909,
+  "bw": null,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": -6.89752165694596,
+    "chars": 21,
+    "symbols": 6
+   },
+   "OLIVIA-16/500": {
+    "score": -0.5459034842630758,
+    "chars": 4,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -25.902730992735954,
+    "chars": 24,
+    "symbols": 8
+   },
+   "Cont-16/500": {
+    "score": -8.40318216398992,
+    "chars": 27,
+    "symbols": 7
+   },
+   "Cont-8/500": {
+    "score": -49.70986595959269,
+    "chars": 69,
+    "symbols": 25
+   },
+   "OLIVIA-32/1K": {
+    "score": -10.0,
+    "chars": 15,
+    "symbols": 10
+   },
+   "Cont-32/1K": {
+    "score": -19.85796399185455,
+    "chars": 36,
+    "symbols": 13
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-8_500",
+  "snr": -5.062777806040049,
+  "bw": null,
+  "fam": "contestia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.04545126290391736,
+    "chars": 2,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": -15.770157856910847,
+    "chars": 12,
+    "symbols": 4
+   },
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -15.600315173925539,
+    "chars": 19,
+    "symbols": 5
+   },
+   "Cont-16/500": {
+    "score": -10.585551100634012,
+    "chars": 23,
+    "symbols": 7
+   },
+   "Cont-8/500": {
+    "score": 9.659524506514018,
+    "chars": 84,
+    "symbols": 0
+   },
+   "OLIVIA-32/1K": {
+    "score": -4.0,
+    "chars": 3,
+    "symbols": 3
+   },
+   "Cont-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   }
+  }
+ },
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-8_250",
+  "snr": -6.476152368745519,
+  "bw": 58.59375,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": -15.705845623524908,
+    "chars": 16,
+    "symbols": 13
+   },
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -7.014283619541813,
+    "chars": 19,
+    "symbols": 8
+   },
+   "Cont-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/500": {
+    "score": -26.82909424267212,
+    "chars": 40,
+    "symbols": 14
+   },
+   "OLIVIA-32/1K": {
+    "score": -0.24184099010764737,
+    "chars": 5,
+    "symbols": 2
+   },
+   "Cont-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-32_1K",
+  "snr": -4.408914144160731,
+  "bw": null,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": -9.451227521584931,
+    "chars": 17,
+    "symbols": 3
+   },
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -13.729307161998399,
+    "chars": 16,
+    "symbols": 6
+   },
+   "Cont-16/500": {
+    "score": -11.675390215993566,
+    "chars": 20,
+    "symbols": 5
+   },
+   "Cont-8/500": {
+    "score": -43.732349466846074,
+    "chars": 63,
+    "symbols": 31
+   },
+   "OLIVIA-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-32/1K": {
+    "score": -15.447990644013862,
+    "chars": 23,
+    "symbols": 4
+   }
+  }
+ },
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-8_500",
+  "snr": -7.417387386702155,
+  "bw": null,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": -8.946956146185041,
+    "chars": 9,
+    "symbols": 8
+   },
+   "Cont-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": 3.369051818495044,
+    "chars": 36,
+    "symbols": 1
+   },
+   "Cont-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/500": {
+    "score": -44.112866719086426,
+    "chars": 60,
+    "symbols": 28
+   },
+   "OLIVIA-32/1K": {
+    "score": -4.331688864839714,
+    "chars": 8,
+    "symbols": 4
+   },
+   "Cont-32/1K": {
+    "score": -1.2476793060788507,
+    "chars": 14,
+    "symbols": 3
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-8_250",
+  "snr": -2.622453781927142,
+  "bw": 249.0234375,
+  "fam": "contestia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": 4.501776887837817,
+    "chars": 35,
+    "symbols": 0
+   }
+  }
+ },
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-32_1K",
+  "snr": -2.7428925833876576,
+  "bw": null,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": -5.757149475618609,
+    "chars": 9,
+    "symbols": 4
+   },
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -20.30640462494901,
+    "chars": 21,
+    "symbols": 11
+   },
+   "Cont-16/500": {
+    "score": -6.490532801147669,
+    "chars": 5,
+    "symbols": 3
+   },
+   "Cont-8/500": {
+    "score": -9.229312548451109,
+    "chars": 21,
+    "symbols": 6
+   },
+   "OLIVIA-32/1K": {
+    "score": -4.163315479684428,
+    "chars": 19,
+    "symbols": 0
+   },
+   "Cont-32/1K": {
+    "score": -16.673315615381,
+    "chars": 35,
+    "symbols": 16
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-8_250",
+  "snr": -3.825411674036574,
+  "bw": 246.09375,
+  "fam": "contestia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": 0.17887581602968144,
+    "chars": 32,
+    "symbols": 0
+   }
+  }
+ },
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-32_1K",
+  "snr": -4.5869356293661365,
+  "bw": null,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-16/500": {
+    "score": -4.471363009146782,
+    "chars": 4,
+    "symbols": 2
+   },
+   "OLIVIA-8/500": {
+    "score": -16.268481022070276,
+    "chars": 15,
+    "symbols": 9
+   },
+   "Cont-16/500": {
+    "score": -21.404405475728318,
+    "chars": 23,
+    "symbols": 10
+   },
+   "Cont-8/500": {
+    "score": -38.411075420288,
+    "chars": 53,
+    "symbols": 21
+   },
+   "OLIVIA-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-32/1K": {
+    "score": -12.559074739236124,
+    "chars": 24,
+    "symbols": 5
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-8_500",
+  "snr": -5.078717662443324,
+  "bw": null,
+  "fam": "contestia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -18.598365678796732,
+    "chars": 21,
+    "symbols": 7
+   },
+   "Cont-16/500": {
+    "score": -0.14364612650578235,
+    "chars": 4,
+    "symbols": 1
+   },
+   "Cont-8/500": {
+    "score": 2.4614446108875305,
+    "chars": 81,
+    "symbols": 0
+   },
+   "OLIVIA-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-32/1K": {
+    "score": -2.47681288503658,
+    "chars": 10,
+    "symbols": 3
+   }
+  }
+ },
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-8_500",
+  "snr": -0.9072691385522109,
+  "bw": 483.3984375,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": 10.305648899949432,
+    "chars": 35,
+    "symbols": 0
+   },
+   "Cont-16/500": {
+    "score": -8.283160375523204,
+    "chars": 20,
+    "symbols": 6
+   },
+   "Cont-8/500": {
+    "score": -43.32128928972849,
+    "chars": 68,
+    "symbols": 32
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-32_1K",
+  "snr": -0.32518800311136964,
+  "bw": 120.1171875,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": -25.4862185574157,
+    "chars": 24,
+    "symbols": 10
+   },
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -19.98351593428284,
+    "chars": 20,
+    "symbols": 10
+   },
+   "Cont-16/500": {
+    "score": -19.00315202479785,
+    "chars": 32,
+    "symbols": 14
+   },
+   "Cont-8/500": {
+    "score": -37.46528144889596,
+    "chars": 59,
+    "symbols": 23
+   },
+   "OLIVIA-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-32/1K": {
+    "score": -34.99065948673095,
+    "chars": 55,
+    "symbols": 35
+   }
+  }
+ },
+ {
+  "true": "olivia",
+  "sub": "OLIVIA-32_1K",
+  "snr": -9.09570270910294,
+  "bw": null,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": -9.263335675663503,
+    "chars": 18,
+    "symbols": 7
+   },
+   "OLIVIA-16/500": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "OLIVIA-8/500": {
+    "score": -17.692626822067627,
+    "chars": 19,
+    "symbols": 7
+   },
+   "Cont-16/500": {
+    "score": -9.151193458493635,
+    "chars": 16,
+    "symbols": 5
+   },
+   "Cont-8/500": {
+    "score": -11.55416646564534,
+    "chars": 15,
+    "symbols": 5
+   },
+   "OLIVIA-32/1K": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-32/1K": {
+    "score": -35.61059489456044,
+    "chars": 34,
+    "symbols": 16
+   }
+  }
+ },
+ {
+  "true": "contestia",
+  "sub": "Cont-16_500",
+  "snr": -2.8032596683678523,
+  "bw": 298.828125,
+  "fam": "olivia",
+  "scores": {
+   "OLIVIA-8/250": {
+    "score": 0.0,
+    "chars": 0,
+    "symbols": 0
+   },
+   "Cont-8/250": {
+    "score": -7.173038692689682,
+    "chars": 15,
+    "symbols": 5
+   }
+  }
+ }
+]

@@ -1,0 +1,38 @@
+{
+ "runs": 3300,
+ "acc_before": 0.8445454545454546,
+ "acc_after": 0.8448484848484848,
+ "fixed": 5,
+ "broken": 4,
+ "checks_run": 522,
+ "check_named": 210,
+ "per_class": {
+  "stanag4285": {
+   "before": 0.88,
+   "after": 0.88
+  },
+  "mil110_serial": {
+   "before": 0.86,
+   "after": 0.89
+  },
+  "mil110_16tone": {
+   "before": 0.87,
+   "after": 0.87
+  },
+  "mil110_39tone": {
+   "before": 0.78,
+   "after": 0.78
+  },
+  "pactor3": {
+   "before": 0.86,
+   "after": 0.84
+  }
+ },
+ "check_time": {
+  "mean": 0.005887661166060964,
+  "p50": 9.646500018334336e-06,
+  "p95": 0.038148357099998975,
+  "max": 0.06134593699994184
+ },
+ "wall_s": 1935.0
+}

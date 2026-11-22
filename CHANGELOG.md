@@ -4,6 +4,12 @@ Version numbers: MINOR = signal batch (new classes and model), PATCH = fixes, to
 sigidwiki-monitor updates within a batch. Each entry links to its results document.
 Format based on https://keepachangelog.com/en/1.1.0/ .
 
+## [0.7.0] - 2026-11-22
+### Added
+- Batch 7: ICAO SELCAL, GMDSS DSC, CCIR 493-4 selcall, HFDL and MSK144 (`sigint/synth_b7.py`,
+  checks in `stress/verify_b7.py`); 43 classes, `data/resnet18_modes_b7_10.pt` (replaces
+  `resnet18_modes_b6_10.pt`). 98.6% at SNR >= -10 dB; new modes 98.5-100%.
+  See `docs/batch7_results.md`.
 ## [0.6.1] - 2026-11-22
 ### Added
 - `stress/sigidwiki_monitor.py`: monthly check of sigidwiki's `[[Category:Signal]]` pages

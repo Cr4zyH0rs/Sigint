@@ -1,0 +1,1460 @@
+[
+ {
+  "true": "mfsk",
+  "sub": "MFSK32",
+  "snr": -3.6646580640674324,
+  "bw": 35.15625,
+  "fam": null,
+  "scores": {
+   "MFSK8": {
+    "chars": 31,
+    "score": 0.07658766333746003,
+    "symbols": 3,
+    "letters": 23,
+    "spaces": 2,
+    "tokens": 4,
+    "clean_tokens": 1
+   },
+   "MFSK16": {
+    "chars": 50,
+    "score": -4.830154910164301,
+    "symbols": 3,
+    "letters": 37,
+    "spaces": 8,
+    "tokens": 6,
+    "clean_tokens": 2
+   },
+   "MFSK32": {
+    "chars": 105,
+    "score": -11.86744739917624,
+    "symbols": 8,
+    "letters": 78,
+    "spaces": 14,
+    "tokens": 15,
+    "clean_tokens": 9
+   },
+   "MFSK64": {
+    "chars": 207,
+    "score": -1.0476243398885807,
+    "symbols": 21,
+    "letters": 150,
+    "spaces": 23,
+    "tokens": 24,
+    "clean_tokens": 10
+   },
+   "THOR8": {
+    "chars": 16,
+    "score": 6.479154465832016,
+    "symbols": 0,
+    "letters": 14,
+    "spaces": 1,
+    "tokens": 2,
+    "clean_tokens": 2
+   },
+   "THOR11": {
+    "chars": 34,
+    "score": -7.462152533860699,
+    "symbols": 2,
+    "letters": 25,
+    "spaces": 4,
+    "tokens": 5,
+    "clean_tokens": 4
+   },
+   "THOR16": {
+    "chars": 52,
+    "score": 1.2739808184929786,
+    "symbols": 4,
+    "letters": 39,
+    "spaces": 8,
+    "tokens": 6,
+    "clean_tokens": 4
+   },
+   "THOR22": {
+    "chars": 76,
+    "score": -5.1896926184262036,
+    "symbols": 2,
+    "letters": 62,
+    "spaces": 10,
+    "tokens": 12,
+    "clean_tokens": 8
+   }
+  }
+ },
+ {
+  "true": "thor",
+  "sub": "THOR8",
+  "snr": 13.85199154618056,
+  "bw": 319.3359375,
+  "fam": "thor",
+  "scores": {
+   "MFSK8": {
+    "chars": 33,
+    "score": -0.12611003407343513,
+    "symbols": 1,
+    "letters": 22,
+    "spaces": 9,
+    "tokens": 5,
+    "clean_tokens": 4
+   },
+   "MFSK16": {
+    "chars": 49,
+    "score": 5.481104900947417,
+    "symbols": 3,
+    "letters": 35,
+    "spaces": 7,
+    "tokens": 8,
+    "clean_tokens": 4
+   },
+   "THOR8": {
+    "chars": 43,
+    "score": -6.933704335995475,
+    "symbols": 0,
+    "letters": 31,
+    "spaces": 12,
+    "tokens": 13,
+    "clean_tokens": 13
+   },
+   "THOR11": {
+    "chars": 22,
+    "score": 1.7203239250050197,
+    "symbols": 3,
+    "letters": 17,
+    "spaces": 2,
+    "tokens": 2,
+    "clean_tokens": 1
+   },
+   "THOR16": {
+    "chars": 50,
+    "score": -11.12999964167111,
+    "symbols": 4,
+    "letters": 37,
+    "spaces": 7,
+    "tokens": 7,
+    "clean_tokens": 5
+   },
+   "THOR22": {
+    "chars": 71,
+    "score": -2.664277819891379,
+    "symbols": 6,
+    "letters": 45,
+    "spaces": 14,
+    "tokens": 14,
+    "clean_tokens": 7
+   }
+  }
+ },
+ {
+  "true": "mfsk",
+  "sub": "MFSK32",
+  "snr": -6.049664793143519,
+  "bw": null,
+  "fam": null,
+  "scores": {
+   "MFSK8": {
+    "chars": 34,
+    "score": -5.001632653932157,
+    "symbols": 4,
+    "letters": 23,
+    "spaces": 5,
+    "tokens": 7,
+    "clean_tokens": 3
+   },
+   "MFSK16": {
+    "chars": 49,
+    "score": -4.105752489871776,
+    "symbols": 5,
+    "letters": 30,
+    "spaces": 13,
+    "tokens": 12,
+    "clean_tokens": 9
+   },
+   "MFSK32": {
+    "chars": 100,
+    "score": -9.3938519621668,
+    "symbols": 10,
+    "letters": 73,
+    "spaces": 11,
+    "tokens": 12,
+    "clean_tokens": 5
+   },
+   "MFSK64": {
+    "chars": 230,
+    "score": -29.95041784847011,
+    "symbols": 16,
+    "letters": 146,
+    "spaces": 56,
+    "tokens": 54,
+    "clean_tokens": 44
+   },
+   "THOR8": {
+    "chars": 20,
+    "score": 2.558217782053679,
+    "symbols": 2,
+    "letters": 12,
+    "spaces": 5,
+    "tokens": 3,
+    "clean_tokens": 1
+   },
+   "THOR11": {
+    "chars": 32,
+    "score": -4.157336003208726,
+    "symbols": 5,
+    "letters": 19,
+    "spaces": 5,
+    "tokens": 7,
+    "clean_tokens": 4
+   },
+   "THOR16": {
+    "chars": 41,
+    "score": 3.2942858712571677,
+    "symbols": 6,
+    "letters": 28,
+    "spaces": 5,
+    "tokens": 6,
+    "clean_tokens": 2
+   },
+   "THOR22": {
+    "chars": 69,
+    "score": -10.967695496947412,
+    "symbols": 9,
+    "letters": 50,
+    "spaces": 7,
+    "tokens": 8,
+    "clean_tokens": 3
+   }
+  }
+ },
+ {
+  "true": "thor",
+  "sub": "THOR22",
+  "snr": 10.14676796775056,
+  "bw": 421.875,
+  "fam": "thor",
+  "scores": {
+   "MFSK16": {
+    "chars": 50,
+    "score": -0.34567802169108197,
+    "symbols": 5,
+    "letters": 30,
+    "spaces": 11,
+    "tokens": 10,
+    "clean_tokens": 7
+   },
+   "MFSK32": {
+    "chars": 101,
+    "score": -15.393354558271145,
+    "symbols": 12,
+    "letters": 68,
+    "spaces": 16,
+    "tokens": 16,
+    "clean_tokens": 8
+   },
+   "THOR16": {
+    "chars": 46,
+    "score": -10.717022292914832,
+    "symbols": 8,
+    "letters": 30,
+    "spaces": 7,
+    "tokens": 6,
+    "clean_tokens": 4
+   },
+   "THOR22": {
+    "chars": 134,
+    "score": -0.3952111977553614,
+    "symbols": 1,
+    "letters": 96,
+    "spaces": 33,
+    "tokens": 35,
+    "clean_tokens": 34
+   }
+  }
+ },
+ {
+  "true": "mfsk",
+  "sub": "MFSK32",
+  "snr": 8.413189323247924,
+  "bw": 527.34375,
+  "fam": null,
+  "scores": {
+   "MFSK16": {
+    "chars": 52,
+    "score": 4.454583644055431,
+    "symbols": 3,
+    "letters": 42,
+    "spaces": 7,
+    "tokens": 6,
+    "clean_tokens": 3
+   },
+   "MFSK32": {
+    "chars": 129,
+    "score": -24.646085355982443,
+    "symbols": 12,
+    "letters": 89,
+    "spaces": 19,
+    "tokens": 20,
+    "clean_tokens": 11
+   },
+   "THOR16": {
+    "chars": 69,
+    "score": -3.7406907322781504,
+    "symbols": 7,
+    "letters": 47,
+    "spaces": 14,
+    "tokens": 11,
+    "clean_tokens": 6
+   },
+   "THOR22": {
+    "chars": 75,
+    "score": 1.3388736187911499,
+    "symbols": 8,
+    "letters": 57,
+    "spaces": 8,
+    "tokens": 8,
+    "clean_tokens": 3
+   }
+  }
+ },
+ {
+  "true": "thor",
+  "sub": "THOR11",
+  "snr": -5.603803613400467,
+  "bw": 175.78125,
+  "fam": "thor",
+  "scores": {
+   "MFSK8": {
+    "chars": 25,
+    "score": -4.388954551497129,
+    "symbols": 2,
+    "letters": 19,
+    "spaces": 3,
+    "tokens": 5,
+    "clean_tokens": 2
+   },
+   "MFSK16": {
+    "chars": 46,
+    "score": 11.35732210850366,
+    "symbols": 4,
+    "letters": 33,
+    "spaces": 8,
+    "tokens": 8,
+    "clean_tokens": 4
+   },
+   "THOR8": {
+    "chars": 25,
+    "score": 8.851303123614684,
+    "symbols": 0,
+    "letters": 17,
+    "spaces": 7,
+    "tokens": 6,
+    "clean_tokens": 6
+   },
+   "THOR11": {
+    "chars": 61,
+    "score": 3.7815199353531717,
+    "symbols": 0,
+    "letters": 44,
+    "spaces": 15,
+    "tokens": 16,
+    "clean_tokens": 16
+   },
+   "THOR16": {
+    "chars": 42,
+    "score": 0.37045750228320995,
+    "symbols": 1,
+    "letters": 28,
+    "spaces": 10,
+    "tokens": 9,
+    "clean_tokens": 8
+   },
+   "THOR22": {
+    "chars": 51,
+    "score": -11.378990413370012,
+    "symbols": 4,
+    "letters": 38,
+    "spaces": 6,
+    "tokens": 7,
+    "clean_tokens": 3
+   }
+  }
+ },
+ {
+  "true": "mfsk",
+  "sub": "MFSK8",
+  "snr": -5.297283265348468,
+  "bw": 55.6640625,
+  "fam": "mfsk",
+  "scores": {
+   "MFSK8": {
+    "chars": 26,
+    "score": -1.3317416932587842,
+    "symbols": 1,
+    "letters": 21,
+    "spaces": 3,
+    "tokens": 4,
+    "clean_tokens": 3
+   },
+   "MFSK16": {
+    "chars": 43,
+    "score": -1.3900979117064554,
+    "symbols": 1,
+    "letters": 31,
+    "spaces": 10,
+    "tokens": 8,
+    "clean_tokens": 7
+   },
+   "MFSK32": {
+    "chars": 79,
+    "score": -2.842752125201944,
+    "symbols": 6,
+    "letters": 54,
+    "spaces": 12,
+    "tokens": 12,
+    "clean_tokens": 9
+   },
+   "MFSK64": {
+    "chars": 171,
+    "score": -24.543974809923682,
+    "symbols": 20,
+    "letters": 117,
+    "spaces": 27,
+    "tokens": 22,
+    "clean_tokens": 10
+   },
+   "THOR8": {
+    "chars": 23,
+    "score": 1.8398270021292036,
+    "symbols": 6,
+    "letters": 11,
+    "spaces": 6,
+    "tokens": 6,
+    "clean_tokens": 1
+   },
+   "THOR11": {
+    "chars": 37,
+    "score": 3.7165174609707394,
+    "symbols": 7,
+    "letters": 23,
+    "spaces": 6,
+    "tokens": 7,
+    "clean_tokens": 2
+   },
+   "THOR16": {
+    "chars": 57,
+    "score": 9.180372405207502,
+    "symbols": 5,
+    "letters": 42,
+    "spaces": 9,
+    "tokens": 7,
+    "clean_tokens": 3
+   },
+   "THOR22": {
+    "chars": 68,
+    "score": -15.02495842267802,
+    "symbols": 8,
+    "letters": 46,
+    "spaces": 11,
+    "tokens": 12,
+    "clean_tokens": 6
+   }
+  }
+ },
+ {
+  "true": "thor",
+  "sub": "THOR11",
+  "snr": 7.714831598628521,
+  "bw": 222.65625,
+  "fam": "thor",
+  "scores": {
+   "MFSK8": {
+    "chars": 21,
+    "score": -0.6429296290830213,
+    "symbols": 2,
+    "letters": 17,
+    "spaces": 2,
+    "tokens": 3,
+    "clean_tokens": 2
+   },
+   "MFSK16": {
+    "chars": 45,
+    "score": -21.741524672423306,
+    "symbols": 4,
+    "letters": 33,
+    "spaces": 8,
+    "tokens": 7,
+    "clean_tokens": 3
+   },
+   "THOR8": {
+    "chars": 20,
+    "score": -12.066395006327102,
+    "symbols": 1,
+    "letters": 17,
+    "spaces": 2,
+    "tokens": 2,
+    "clean_tokens": 1
+   },
+   "THOR11": {
+    "chars": 68,
+    "score": 10.623242883623782,
+    "symbols": 0,
+    "letters": 50,
+    "spaces": 15,
+    "tokens": 16,
+    "clean_tokens": 16
+   },
+   "THOR16": {
+    "chars": 53,
+    "score": 1.9666698866104662,
+    "symbols": 6,
+    "letters": 40,
+    "spaces": 6,
+    "tokens": 7,
+    "clean_tokens": 4
+   },
+   "THOR22": {
+    "chars": 71,
+    "score": 10.58631288304574,
+    "symbols": 6,
+    "letters": 51,
+    "spaces": 8,
+    "tokens": 9,
+    "clean_tokens": 5
+   }
+  }
+ },
+ {
+  "true": "mfsk",
+  "sub": "MFSK16",
+  "snr": 9.733066093506341,
+  "bw": 284.1796875,
+  "fam": "mfsk",
+  "scores": {
+   "MFSK8": {
+    "chars": 32,
+    "score": -8.72904059641619,
+    "symbols": 3,
+    "letters": 24,
+    "spaces": 3,
+    "tokens": 5,
+    "clean_tokens": 4
+   },
+   "MFSK16": {
+    "chars": 72,
+    "score": -9.686664519356988,
+    "symbols": 2,
+    "letters": 55,
+    "spaces": 13,
+    "tokens": 15,
+    "clean_tokens": 13
+   },
+   "THOR8": {
+    "chars": 21,
+    "score": -1.9347618553645591,
+    "symbols": 3,
+    "letters": 14,
+    "spaces": 3,
+    "tokens": 4,
+    "clean_tokens": 2
+   },
+   "THOR11": {
+    "chars": 35,
+    "score": 4.948411584234352,
+    "symbols": 2,
+    "letters": 25,
+    "spaces": 6,
+    "tokens": 6,
+    "clean_tokens": 4
+   },
+   "THOR16": {
+    "chars": 46,
+    "score": 3.029556907830439,
+    "symbols": 8,
+    "letters": 32,
+    "spaces": 4,
+    "tokens": 5,
+    "clean_tokens": 1
+   },
+   "THOR22": {
+    "chars": 67,
+    "score": -18.063661084189018,
+    "symbols": 10,
+    "letters": 41,
+    "spaces": 11,
+    "tokens": 9,
+    "clean_tokens": 4
+   }
+  }
+ },
+ {
+  "true": "thor",
+  "sub": "THOR16",
+  "snr": 3.5470023435867226,
+  "bw": 298.828125,
+  "fam": "thor",
+  "scores": {
+   "MFSK8": {
+    "chars": 33,
+    "score": 4.7373684217370355,
+    "symbols": 4,
+    "letters": 21,
+    "spaces": 6,
+    "tokens": 6,
+    "clean_tokens": 3
+   },
+   "MFSK16": {
+    "chars": 42,
+    "score": -16.290090081404877,
+    "symbols": 1,
+    "letters": 32,
+    "spaces": 6,
+    "tokens": 7,
+    "clean_tokens": 6
+   },
+   "THOR8": {
+    "chars": 21,
+    "score": 0.31786568102068535,
+    "symbols": 1,
+    "letters": 14,
+    "spaces": 4,
+    "tokens": 6,
+    "clean_tokens": 5
+   },
+   "THOR11": {
+    "chars": 42,
+    "score": -12.621129327980045,
+    "symbols": 6,
+    "letters": 29,
+    "spaces": 7,
+    "tokens": 8,
+    "clean_tokens": 2
+   },
+   "THOR16": {
+    "chars": 96,
+    "score": 18.094389725710204,
+    "symbols": 1,
+    "letters": 65,
+    "spaces": 25,
+    "tokens": 27,
+    "clean_tokens": 26
+   },
+   "THOR22": {
+    "chars": 66,
+    "score": -8.434294085931997,
+    "symbols": 6,
+    "letters": 39,
+    "spaces": 16,
+    "tokens": 15,
+    "clean_tokens": 10
+   }
+  }
+ },
+ {
+  "true": "mfsk",
+  "sub": "MFSK32",
+  "snr": -3.4839840601338734,
+  "bw": 61.5234375,
+  "fam": null,
+  "scores": {
+   "MFSK8": {
+    "chars": 26,
+    "score": -1.4783639094917393,
+    "symbols": 2,
+    "letters": 19,
+    "spaces": 4,
+    "tokens": 4,
+    "clean_tokens": 3
+   },
+   "MFSK16": {
+    "chars": 44,
+    "score": -6.7320719289902415,
+    "symbols": 3,
+    "letters": 32,
+    "spaces": 7,
+    "tokens": 6,
+    "clean_tokens": 5
+   },
+   "MFSK32": {
+    "chars": 110,
+    "score": -18.841358290883655,
+    "symbols": 17,
+    "letters": 72,
+    "spaces": 17,
+    "tokens": 15,
+    "clean_tokens": 5
+   },
+   "MFSK64": {
+    "chars": 181,
+    "score": -20.129428558423513,
+    "symbols": 16,
+    "letters": 128,
+    "spaces": 24,
+    "tokens": 24,
+    "clean_tokens": 12
+   },
+   "THOR8": {
+    "chars": 23,
+    "score": 3.2233736726850393,
+    "symbols": 1,
+    "letters": 16,
+    "spaces": 5,
+    "tokens": 5,
+    "clean_tokens": 4
+   },
+   "THOR11": {
+    "chars": 35,
+    "score": -9.264550410798105,
+    "symbols": 4,
+    "letters": 24,
+    "spaces": 6,
+    "tokens": 4,
+    "clean_tokens": 2
+   },
+   "THOR16": {
+    "chars": 53,
+    "score": 1.2011115736212794,
+    "symbols": 8,
+    "letters": 36,
+    "spaces": 7,
+    "tokens": 8,
+    "clean_tokens": 2
+   },
+   "THOR22": {
+    "chars": 66,
+    "score": -11.341292762785589,
+    "symbols": 8,
+    "letters": 52,
+    "spaces": 5,
+    "tokens": 5,
+    "clean_tokens": 2
+   }
+  }
+ },
+ {
+  "true": "thor",
+  "sub": "THOR11",
+  "snr": -5.697465936899934,
+  "bw": 164.0625,
+  "fam": "thor",
+  "scores": {
+   "MFSK8": {
+    "chars": 36,
+    "score": 2.6490568570132704,
+    "symbols": 4,
+    "letters": 23,
+    "spaces": 6,
+    "tokens": 6,
+    "clean_tokens": 2
+   },
+   "MFSK16": {
+    "chars": 46,
+    "score": 7.35909751707639,
+    "symbols": 2,
+    "letters": 35,
+    "spaces": 7,
+    "tokens": 7,
+    "clean_tokens": 4
+   },
+   "THOR8": {
+    "chars": 17,
+    "score": -5.971384881765999,
+    "symbols": 3,
+    "letters": 13,
+    "spaces": 0,
+    "tokens": 1,
+    "clean_tokens": 0
+   },
+   "THOR11": {
+    "chars": 61,
+    "score": -9.439845486904106,
+    "symbols": 0,
+    "letters": 41,
+    "spaces": 16,
+    "tokens": 17,
+    "clean_tokens": 17
+   },
+   "THOR16": {
+    "chars": 46,
+    "score": -8.774069422280695,
+    "symbols": 2,
+    "letters": 36,
+    "spaces": 7,
+    "tokens": 6,
+    "clean_tokens": 5
+   },
+   "THOR22": {
+    "chars": 70,
+    "score": -1.6783570015199354,
+    "symbols": 6,
+    "letters": 50,
+    "spaces": 11,
+    "tokens": 10,
+    "clean_tokens": 6
+   }
+  }
+ },
+ {
+  "true": "mfsk",
+  "sub": "MFSK64",
+  "snr": -7.7045231391091225,
+  "bw": null,
+  "fam": null,
+  "scores": {
+   "MFSK8": {
+    "chars": 29,
+    "score": -3.82310193355139,
+    "symbols": 2,
+    "letters": 23,
+    "spaces": 4,
+    "tokens": 4,
+    "clean_tokens": 2
+   },
+   "MFSK16": {
+    "chars": 46,
+    "score": -11.650674206229349,
+    "symbols": 6,
+    "letters": 32,
+    "spaces": 8,
+    "tokens": 9,
+    "clean_tokens": 3
+   },
+   "MFSK32": {
+    "chars": 119,
+    "score": -0.5084642871726983,
+    "symbols": 11,
+    "letters": 91,
+    "spaces": 11,
+    "tokens": 15,
+    "clean_tokens": 7
+   },
+   "MFSK64": {
+    "chars": 223,
+    "score": -39.70209426191743,
+    "symbols": 17,
+    "letters": 159,
+    "spaces": 32,
+    "tokens": 32,
+    "clean_tokens": 20
+   },
+   "THOR8": {
+    "chars": 22,
+    "score": -3.7755547708943658,
+    "symbols": 4,
+    "letters": 16,
+    "spaces": 0,
+    "tokens": 1,
+    "clean_tokens": 0
+   },
+   "THOR11": {
+    "chars": 34,
+    "score": -6.986439217109449,
+    "symbols": 6,
+    "letters": 22,
+    "spaces": 6,
+    "tokens": 6,
+    "clean_tokens": 3
+   },
+   "THOR16": {
+    "chars": 39,
+    "score": -7.4586422140310145,
+    "symbols": 6,
+    "letters": 26,
+    "spaces": 4,
+    "tokens": 5,
+    "clean_tokens": 3
+   },
+   "THOR22": {
+    "chars": 67,
+    "score": -27.02954642414299,
+    "symbols": 10,
+    "letters": 43,
+    "spaces": 11,
+    "tokens": 11,
+    "clean_tokens": 5
+   }
+  }
+ },
+ {
+  "true": "thor",
+  "sub": "THOR11",
+  "snr": 2.5394127368930928,
+  "bw": 216.796875,
+  "fam": "thor",
+  "scores": {
+   "MFSK8": {
+    "chars": 38,
+    "score": 3.4447869667965416,
+    "symbols": 4,
+    "letters": 22,
+    "spaces": 10,
+    "tokens": 9,
+    "clean_tokens": 5
+   },
+   "MFSK16": {
+    "chars": 38,
+    "score": 3.960647757893324,
+    "symbols": 3,
+    "letters": 30,
+    "spaces": 5,
+    "tokens": 6,
+    "clean_tokens": 3
+   },
+   "THOR8": {
+    "chars": 21,
+    "score": -6.435044256956837,
+    "symbols": 3,
+    "letters": 12,
+    "spaces": 3,
+    "tokens": 4,
+    "clean_tokens": 2
+   },
+   "THOR11": {
+    "chars": 61,
+    "score": -6.713005497428402,
+    "symbols": 0,
+    "letters": 46,
+    "spaces": 14,
+    "tokens": 15,
+    "clean_tokens": 15
+   },
+   "THOR16": {
+    "chars": 46,
+    "score": -7.430557903625582,
+    "symbols": 7,
+    "letters": 32,
+    "spaces": 6,
+    "tokens": 7,
+    "clean_tokens": 4
+   },
+   "THOR22": {
+    "chars": 66,
+    "score": -10.777273960875416,
+    "symbols": 2,
+    "letters": 57,
+    "spaces": 4,
+    "tokens": 5,
+    "clean_tokens": 1
+   }
+  }
+ },
+ {
+  "true": "mfsk",
+  "sub": "MFSK32",
+  "snr": -4.798504371812081,
+  "bw": null,
+  "fam": null,
+  "scores": {
+   "MFSK8": {
+    "chars": 21,
+    "score": -3.85751179468142,
+    "symbols": 2,
+    "letters": 12,
+    "spaces": 3,
+    "tokens": 5,
+    "clean_tokens": 4
+   },
+   "MFSK16": {
+    "chars": 51,
+    "score": -14.799990971501492,
+    "symbols": 4,
+    "letters": 37,
+    "spaces": 8,
+    "tokens": 8,
+    "clean_tokens": 5
+   },
+   "MFSK32": {
+    "chars": 101,
+    "score": -19.607012332964644,
+    "symbols": 9,
+    "letters": 70,
+    "spaces": 16,
+    "tokens": 14,
+    "clean_tokens": 6
+   },
+   "MFSK64": {
+    "chars": 201,
+    "score": -49.067738151428046,
+    "symbols": 15,
+    "letters": 146,
+    "spaces": 30,
+    "tokens": 30,
+    "clean_tokens": 16
+   },
+   "THOR8": {
+    "chars": 28,
+    "score": -11.547367375361533,
+    "symbols": 1,
+    "letters": 21,
+    "spaces": 6,
+    "tokens": 6,
+    "clean_tokens": 5
+   },
+   "THOR11": {
+    "chars": 37,
+    "score": -1.2537514054747032,
+    "symbols": 6,
+    "letters": 27,
+    "spaces": 4,
+    "tokens": 4,
+    "clean_tokens": 1
+   },
+   "THOR16": {
+    "chars": 42,
+    "score": -4.005061745080548,
+    "symbols": 3,
+    "letters": 30,
+    "spaces": 5,
+    "tokens": 4,
+    "clean_tokens": 2
+   },
+   "THOR22": {
+    "chars": 68,
+    "score": 7.980674425948829,
+    "symbols": 6,
+    "letters": 48,
+    "spaces": 12,
+    "tokens": 12,
+    "clean_tokens": 9
+   }
+  }
+ },
+ {
+  "true": "thor",
+  "sub": "THOR16",
+  "snr": 5.157173189797907,
+  "bw": 304.6875,
+  "fam": "thor",
+  "scores": {
+   "MFSK8": {
+    "chars": 29,
+    "score": 3.1639295198408526,
+    "symbols": 3,
+    "letters": 21,
+    "spaces": 5,
+    "tokens": 5,
+    "clean_tokens": 4
+   },
+   "MFSK16": {
+    "chars": 41,
+    "score": -3.920065633156385,
+    "symbols": 4,
+    "letters": 31,
+    "spaces": 2,
+    "tokens": 3,
+    "clean_tokens": 1
+   },
+   "THOR8": {
+    "chars": 12,
+    "score": -1.3203796551797944,
+    "symbols": 1,
+    "letters": 9,
+    "spaces": 0,
+    "tokens": 1,
+    "clean_tokens": 0
+   },
+   "THOR11": {
+    "chars": 36,
+    "score": 0.5208665712998725,
+    "symbols": 4,
+    "letters": 24,
+    "spaces": 7,
+    "tokens": 8,
+    "clean_tokens": 6
+   },
+   "THOR16": {
+    "chars": 94,
+    "score": 6.865931045996999,
+    "symbols": 0,
+    "letters": 66,
+    "spaces": 22,
+    "tokens": 24,
+    "clean_tokens": 24
+   },
+   "THOR22": {
+    "chars": 85,
+    "score": -14.490007279937611,
+    "symbols": 10,
+    "letters": 57,
+    "spaces": 14,
+    "tokens": 13,
+    "clean_tokens": 8
+   }
+  }
+ },
+ {
+  "true": "mfsk",
+  "sub": "MFSK8",
+  "snr": 13.108084581446299,
+  "bw": 295.8984375,
+  "fam": "mfsk",
+  "scores": {
+   "MFSK8": {
+    "chars": 44,
+    "score": 10.019086091276092,
+    "symbols": 1,
+    "letters": 29,
+    "spaces": 9,
+    "tokens": 12,
+    "clean_tokens": 11
+   },
+   "MFSK16": {
+    "chars": 37,
+    "score": -0.3061583751927671,
+    "symbols": 9,
+    "letters": 24,
+    "spaces": 3,
+    "tokens": 4,
+    "clean_tokens": 2
+   },
+   "THOR8": {
+    "chars": 29,
+    "score": 0.0644595709546425,
+    "symbols": 3,
+    "letters": 21,
+    "spaces": 3,
+    "tokens": 4,
+    "clean_tokens": 2
+   },
+   "THOR11": {
+    "chars": 32,
+    "score": -2.7209055417288117,
+    "symbols": 4,
+    "letters": 22,
+    "spaces": 4,
+    "tokens": 5,
+    "clean_tokens": 3
+   },
+   "THOR16": {
+    "chars": 50,
+    "score": -5.6969708532921075,
+    "symbols": 8,
+    "letters": 36,
+    "spaces": 5,
+    "tokens": 5,
+    "clean_tokens": 1
+   },
+   "THOR22": {
+    "chars": 66,
+    "score": -11.859575974905423,
+    "symbols": 7,
+    "letters": 42,
+    "spaces": 15,
+    "tokens": 13,
+    "clean_tokens": 7
+   }
+  }
+ },
+ {
+  "true": "thor",
+  "sub": "THOR16",
+  "snr": -1.0865181933136903,
+  "bw": 284.1796875,
+  "fam": "thor",
+  "scores": {
+   "MFSK8": {
+    "chars": 21,
+    "score": -0.13625108505573114,
+    "symbols": 0,
+    "letters": 20,
+    "spaces": 1,
+    "tokens": 2,
+    "clean_tokens": 2
+   },
+   "MFSK16": {
+    "chars": 41,
+    "score": -20.11515043327031,
+    "symbols": 5,
+    "letters": 28,
+    "spaces": 3,
+    "tokens": 5,
+    "clean_tokens": 4
+   },
+   "THOR8": {
+    "chars": 21,
+    "score": 2.540859832785981,
+    "symbols": 3,
+    "letters": 16,
+    "spaces": 1,
+    "tokens": 3,
+    "clean_tokens": 1
+   },
+   "THOR11": {
+    "chars": 23,
+    "score": -5.954640399297233,
+    "symbols": 1,
+    "letters": 20,
+    "spaces": 2,
+    "tokens": 3,
+    "clean_tokens": 2
+   },
+   "THOR16": {
+    "chars": 96,
+    "score": 13.38175374547846,
+    "symbols": 0,
+    "letters": 69,
+    "spaces": 23,
+    "tokens": 25,
+    "clean_tokens": 25
+   },
+   "THOR22": {
+    "chars": 66,
+    "score": -17.42381967494093,
+    "symbols": 5,
+    "letters": 54,
+    "spaces": 5,
+    "tokens": 6,
+    "clean_tokens": 2
+   }
+  }
+ },
+ {
+  "true": "mfsk",
+  "sub": "MFSK16",
+  "snr": 13.697230656047779,
+  "bw": 304.6875,
+  "fam": null,
+  "scores": {
+   "MFSK8": {
+    "chars": 32,
+    "score": 0.8926125551519467,
+    "symbols": 2,
+    "letters": 24,
+    "spaces": 5,
+    "tokens": 5,
+    "clean_tokens": 4
+   },
+   "MFSK16": {
+    "chars": 51,
+    "score": 3.3302126032864012,
+    "symbols": 4,
+    "letters": 36,
+    "spaces": 8,
+    "tokens": 8,
+    "clean_tokens": 4
+   },
+   "THOR8": {
+    "chars": 16,
+    "score": -1.6714406340452133,
+    "symbols": 2,
+    "letters": 11,
+    "spaces": 2,
+    "tokens": 4,
+    "clean_tokens": 2
+   },
+   "THOR11": {
+    "chars": 32,
+    "score": -5.635025192884829,
+    "symbols": 2,
+    "letters": 26,
+    "spaces": 4,
+    "tokens": 5,
+    "clean_tokens": 4
+   },
+   "THOR16": {
+    "chars": 50,
+    "score": -2.926999717878918,
+    "symbols": 3,
+    "letters": 37,
+    "spaces": 7,
+    "tokens": 8,
+    "clean_tokens": 6
+   },
+   "THOR22": {
+    "chars": 65,
+    "score": -7.2022004514626055,
+    "symbols": 5,
+    "letters": 46,
+    "spaces": 7,
+    "tokens": 8,
+    "clean_tokens": 2
+   }
+  }
+ },
+ {
+  "true": "thor",
+  "sub": "THOR16",
+  "snr": -9.553317274098102,
+  "bw": null,
+  "fam": "thor",
+  "scores": {
+   "MFSK8": {
+    "chars": 29,
+    "score": -8.3719595710689,
+    "symbols": 2,
+    "letters": 24,
+    "spaces": 3,
+    "tokens": 4,
+    "clean_tokens": 3
+   },
+   "MFSK16": {
+    "chars": 47,
+    "score": 3.141548675653487,
+    "symbols": 4,
+    "letters": 31,
+    "spaces": 8,
+    "tokens": 8,
+    "clean_tokens": 4
+   },
+   "MFSK32": {
+    "chars": 129,
+    "score": -6.335169549579913,
+    "symbols": 9,
+    "letters": 98,
+    "spaces": 20,
+    "tokens": 18,
+    "clean_tokens": 11
+   },
+   "MFSK64": {
+    "chars": 192,
+    "score": -20.74270706884707,
+    "symbols": 24,
+    "letters": 135,
+    "spaces": 25,
+    "tokens": 21,
+    "clean_tokens": 8
+   },
+   "THOR8": {
+    "chars": 32,
+    "score": -2.7784975306560042,
+    "symbols": 1,
+    "letters": 23,
+    "spaces": 8,
+    "tokens": 7,
+    "clean_tokens": 6
+   },
+   "THOR11": {
+    "chars": 30,
+    "score": 0.4985413434197936,
+    "symbols": 0,
+    "letters": 22,
+    "spaces": 7,
+    "tokens": 5,
+    "clean_tokens": 5
+   },
+   "THOR16": {
+    "chars": 86,
+    "score": 12.662306657434511,
+    "symbols": 1,
+    "letters": 57,
+    "spaces": 19,
+    "tokens": 21,
+    "clean_tokens": 20
+   },
+   "THOR22": {
+    "chars": 69,
+    "score": 4.316204414993493,
+    "symbols": 5,
+    "letters": 49,
+    "spaces": 12,
+    "tokens": 9,
+    "clean_tokens": 4
+   }
+  }
+ },
+ {
+  "true": "mfsk",
+  "sub": "MFSK32",
+  "snr": 0.8928702952467393,
+  "bw": 500.9765625,
+  "fam": null,
+  "scores": {
+   "MFSK16": {
+    "chars": 49,
+    "score": -12.022338213835024,
+    "symbols": 6,
+    "letters": 33,
+    "spaces": 9,
+    "tokens": 10,
+    "clean_tokens": 5
+   },
+   "MFSK32": {
+    "chars": 119,
+    "score": -6.346935486339131,
+    "symbols": 17,
+    "letters": 78,
+    "spaces": 17,
+    "tokens": 21,
+    "clean_tokens": 12
+   },
+   "THOR16": {
+    "chars": 56,
+    "score": -14.944362291233539,
+    "symbols": 4,
+    "letters": 45,
+    "spaces": 6,
+    "tokens": 7,
+    "clean_tokens": 4
+   },
+   "THOR22": {
+    "chars": 69,
+    "score": 10.932311264687627,
+    "symbols": 10,
+    "letters": 49,
+    "spaces": 9,
+    "tokens": 7,
+    "clean_tokens": 2
+   }
+  }
+ },
+ {
+  "true": "thor",
+  "sub": "THOR11",
+  "snr": 1.2485748331406477,
+  "bw": 208.0078125,
+  "fam": "thor",
+  "scores": {
+   "MFSK8": {
+    "chars": 31,
+    "score": 4.014338648497592,
+    "symbols": 2,
+    "letters": 23,
+    "spaces": 4,
+    "tokens": 5,
+    "clean_tokens": 3
+   },
+   "MFSK16": {
+    "chars": 56,
+    "score": 1.728327912548693,
+    "symbols": 8,
+    "letters": 29,
+    "spaces": 14,
+    "tokens": 13,
+    "clean_tokens": 8
+   },
+   "THOR8": {
+    "chars": 24,
+    "score": -12.888133945977184,
+    "symbols": 3,
+    "letters": 14,
+    "spaces": 5,
+    "tokens": 4,
+    "clean_tokens": 2
+   },
+   "THOR11": {
+    "chars": 67,
+    "score": 12.758434291993833,
+    "symbols": 0,
+    "letters": 51,
+    "spaces": 16,
+    "tokens": 17,
+    "clean_tokens": 17
+   },
+   "THOR16": {
+    "chars": 42,
+    "score": -4.069239228526753,
+    "symbols": 7,
+    "letters": 28,
+    "spaces": 4,
+    "tokens": 5,
+    "clean_tokens": 1
+   },
+   "THOR22": {
+    "chars": 67,
+    "score": -23.17962980557274,
+    "symbols": 8,
+    "letters": 49,
+    "spaces": 7,
+    "tokens": 8,
+    "clean_tokens": 3
+   }
+  }
+ }
+]

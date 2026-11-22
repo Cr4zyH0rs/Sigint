@@ -9,7 +9,7 @@ n, seed, out = int(sys.argv[1]), int(sys.argv[2]), sys.argv[3]
 cl = FldigiClient(); rng = np.random.default_rng(seed); rows = []
 for i in range(n):
     c = ["olivia", "contestia"][i % 2]
-    snr = float(rng.uniform(-10, 15))
+    snr = float(rng.uniform(float(os.environ.get("SNR_LO", -10)), float(os.environ.get("SNR_HI", 15))))
     x, m = synth.generate(c, rng, snr)
     fc, bw, _ = features.occupancy_for(c, x)
     fam, sc = oc_check.decide(cl, x, fc, bw)
