@@ -1,0 +1,127 @@
+{
+ "fsq": {
+  "ifk_repeats": 0,
+  "tones_used": 33,
+  "grid_hz": 8.7891,
+  "obw99_hz": 286,
+  "expected": "33 tones, 8.79 Hz, no repeated tones, 300 Hz",
+  "bauds": {
+   "6": 5.859375,
+   "4.5": 4.39453125,
+   "3": 2.9296875,
+   "2": 1.953125
+  }
+ },
+ "packet": {
+  "inst_freq_peaks_hz": [
+   1405.0,
+   1595.0
+  ],
+  "shift_hz": 190.0,
+  "shortest_run_s": 0.00333,
+  "bit_s": 0.00333,
+  "obw99_hz": 508,
+  "expected": "200 Hz shift, 300 Bd, 730 Hz listed"
+ },
+ "sitora": {
+  "cycle_s": 0.45,
+  "bursts_s": [
+   0.087,
+   0.252
+  ],
+  "expected": "ACF 450 ms, bursts 0.065-0.290 s, pauses >= 0.2 s"
+ },
+ "ndb": {
+  "meta": {
+   "submode": "1020Hz",
+   "centre": 754.029706487299
+  },
+  "carrier_db": 110.1,
+  "usb_db": 98.1,
+  "lsb_db": null,
+  "off_line_db": 21.5,
+  "expected": "carrier, sidebands at +-400 or 1020 Hz (dB above median PSD)"
+ },
+ "occupancy_0_15db": {
+  "fsq": {
+   "3Bd": {
+    "n": 17,
+    "none": 0,
+    "centre_err_med": 5.2,
+    "bw_med": 307.6
+   },
+   "6Bd": {
+    "n": 27,
+    "none": 0,
+    "centre_err_med": 6.3,
+    "bw_med": 310.5
+   },
+   "2Bd": {
+    "n": 4,
+    "none": 0,
+    "centre_err_med": 12.7,
+    "bw_med": 306.2
+   },
+   "4.5Bd": {
+    "n": 12,
+    "none": 0,
+    "centre_err_med": 7.7,
+    "bw_med": 307.6
+   }
+  },
+  "packet": {
+   "FSK300": {
+    "n": 36,
+    "none": 0,
+    "centre_err_med": 19.2,
+    "bw_med": 356.0
+   },
+   "BPSK300": {
+    "n": 24,
+    "none": 0,
+    "centre_err_med": 88.4,
+    "bw_med": 404.3
+   }
+  },
+  "sitora": {
+   "400Hz": {
+    "n": 7,
+    "none": 0,
+    "centre_err_med": 112.9,
+    "bw_med": 544.9
+   },
+   "170Hz": {
+    "n": 37,
+    "none": 0,
+    "centre_err_med": 1.7,
+    "bw_med": 246.1
+   },
+   "300Hz": {
+    "n": 8,
+    "none": 0,
+    "centre_err_med": 64.4,
+    "bw_med": 462.9
+   },
+   "850Hz": {
+    "n": 8,
+    "none": 0,
+    "centre_err_med": 338.9,
+    "bw_med": 93.8
+   }
+  },
+  "ndb": {
+   "1020Hz": {
+    "n": 27,
+    "none": 0,
+    "centre_err_med": 0.0,
+    "bw_med": 14.6
+   },
+   "400Hz": {
+    "n": 33,
+    "none": 0,
+    "centre_err_med": 0.0,
+    "bw_med": 11.7
+   }
+  }
+ }
+}

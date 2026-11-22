@@ -1,0 +1,115 @@
+{
+ "runs": 2600,
+ "acc_before": 0.8211538461538461,
+ "acc_after": 0.8492307692307692,
+ "fixed": 77,
+ "broken": 4,
+ "per_class": {
+  "ft8": {
+   "before": 0.74,
+   "after": 0.87
+  },
+  "cw": {
+   "before": 0.85,
+   "after": 0.85
+  },
+  "rtty": {
+   "before": 0.96,
+   "after": 0.96
+  },
+  "psk31": {
+   "before": 0.95,
+   "after": 0.95
+  },
+  "ssb": {
+   "before": 0.94,
+   "after": 0.94
+  },
+  "noise": {
+   "before": 1.0,
+   "after": 1.0
+  },
+  "ft4": {
+   "before": 0.97,
+   "after": 0.97
+  },
+  "js8": {
+   "before": 0.59,
+   "after": 0.86
+  },
+  "wspr": {
+   "before": 0.92,
+   "after": 0.95
+  },
+  "jt65": {
+   "before": 0.94,
+   "after": 0.96
+  },
+  "jt9": {
+   "before": 0.72,
+   "after": 0.88
+  },
+  "fst4": {
+   "before": 0.64,
+   "after": 0.71
+  },
+  "q65": {
+   "before": 0.92,
+   "after": 0.92
+  },
+  "olivia": {
+   "before": 0.64,
+   "after": 0.64
+  },
+  "contestia": {
+   "before": 0.44,
+   "after": 0.44
+  },
+  "mfsk": {
+   "before": 0.4,
+   "after": 0.4
+  },
+  "thor": {
+   "before": 0.92,
+   "after": 0.92
+  },
+  "dominoex": {
+   "before": 0.89,
+   "after": 0.89
+  },
+  "mt63": {
+   "before": 0.94,
+   "after": 0.94
+  },
+  "hell": {
+   "before": 0.78,
+   "after": 0.78
+  },
+  "throb": {
+   "before": 0.95,
+   "after": 0.95
+  },
+  "sstv": {
+   "before": 0.81,
+   "after": 0.81
+  },
+  "wefax": {
+   "before": 0.92,
+   "after": 0.94
+  },
+  "ale": {
+   "before": 0.95,
+   "after": 0.95
+  },
+  "cw_beacon": {
+   "before": 0.71,
+   "after": 0.74
+  },
+  "sitorb": {
+   "before": 0.86,
+   "after": 0.86
+  }
+ },
+ "caveat": "dials drawn from the same lists the tie-breaker uses: an upper bound for band-plan-following operators",
+ "wall_s": 124.2
+}

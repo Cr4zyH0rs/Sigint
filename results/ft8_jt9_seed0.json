@@ -1,0 +1,172 @@
+{
+ "runs": 100,
+ "decode_rate": 0.75,
+ "false_decodes": 0,
+ "by_snr": {
+  "-26..-24": {
+   "n": 8,
+   "decode_rate": 0.0
+  },
+  "-24..-22": {
+   "n": 12,
+   "decode_rate": 0.08333333333333333
+  },
+  "-22..-20": {
+   "n": 6,
+   "decode_rate": 0.16666666666666666
+  },
+  "-20..-18": {
+   "n": 10,
+   "decode_rate": 0.9
+  },
+  "-18..-16": {
+   "n": 10,
+   "decode_rate": 1.0
+  },
+  "-16..-14": {
+   "n": 11,
+   "decode_rate": 1.0
+  },
+  "-14..-12": {
+   "n": 6,
+   "decode_rate": 1.0
+  },
+  "-12..-10": {
+   "n": 6,
+   "decode_rate": 1.0
+  },
+  "-10..-8": {
+   "n": 6,
+   "decode_rate": 1.0
+  },
+  "-8..-6": {
+   "n": 11,
+   "decode_rate": 1.0
+  },
+  "-6..-4": {
+   "n": 4,
+   "decode_rate": 1.0
+  },
+  "-4..-2": {
+   "n": 5,
+   "decode_rate": 1.0
+  },
+  "-2..0": {
+   "n": 5,
+   "decode_rate": 1.0
+  }
+ },
+ "snr_report_bias_db": -0.19583422145571103,
+ "snr_report_sd_db": 0.46120061967300247,
+ "jt9_time": {
+  "mean": 1.419032394689989,
+  "p50": 1.60776770450002,
+  "p95": 1.8512865416500404,
+  "max": 2.0632025270001577
+ },
+ "multi_signal": [
+  {
+   "sent": 8,
+   "decoded": 8
+  },
+  {
+   "sent": 2,
+   "decoded": 2
+  },
+  {
+   "sent": 6,
+   "decoded": 6
+  },
+  {
+   "sent": 7,
+   "decoded": 7
+  },
+  {
+   "sent": 6,
+   "decoded": 6
+  },
+  {
+   "sent": 5,
+   "decoded": 5
+  },
+  {
+   "sent": 5,
+   "decoded": 5
+  },
+  {
+   "sent": 2,
+   "decoded": 2
+  },
+  {
+   "sent": 4,
+   "decoded": 4
+  },
+  {
+   "sent": 3,
+   "decoded": 3
+  },
+  {
+   "sent": 4,
+   "decoded": 4
+  },
+  {
+   "sent": 3,
+   "decoded": 3
+  },
+  {
+   "sent": 8,
+   "decoded": 8
+  },
+  {
+   "sent": 6,
+   "decoded": 6
+  },
+  {
+   "sent": 2,
+   "decoded": 2
+  },
+  {
+   "sent": 5,
+   "decoded": 5
+  },
+  {
+   "sent": 2,
+   "decoded": 2
+  },
+  {
+   "sent": 3,
+   "decoded": 3
+  },
+  {
+   "sent": 2,
+   "decoded": 2
+  },
+  {
+   "sent": 8,
+   "decoded": 7
+  },
+  {
+   "sent": 4,
+   "decoded": 4
+  },
+  {
+   "sent": 3,
+   "decoded": 3
+  },
+  {
+   "sent": 6,
+   "decoded": 6
+  },
+  {
+   "sent": 4,
+   "decoded": 4
+  },
+  {
+   "sent": 4,
+   "decoded": 4
+  }
+ ],
+ "multi_recall": 0.9910714285714286,
+ "false_examples": [],
+ "wall_s": 190.1
+}

@@ -1,0 +1,143 @@
+{
+ "runs": 3300,
+ "acc_before": 0.8296969696969697,
+ "acc_after": 0.8515151515151516,
+ "fixed": 76,
+ "broken": 4,
+ "per_class": {
+  "ft8": {
+   "before": 0.62,
+   "after": 0.79
+  },
+  "cw": {
+   "before": 0.89,
+   "after": 0.89
+  },
+  "rtty": {
+   "before": 0.97,
+   "after": 0.97
+  },
+  "psk31": {
+   "before": 0.97,
+   "after": 0.97
+  },
+  "ssb": {
+   "before": 0.93,
+   "after": 0.93
+  },
+  "noise": {
+   "before": 1.0,
+   "after": 1.0
+  },
+  "ft4": {
+   "before": 0.98,
+   "after": 0.98
+  },
+  "js8": {
+   "before": 0.68,
+   "after": 0.85
+  },
+  "wspr": {
+   "before": 0.95,
+   "after": 0.91
+  },
+  "jt65": {
+   "before": 0.93,
+   "after": 0.95
+  },
+  "jt9": {
+   "before": 0.77,
+   "after": 0.94
+  },
+  "fst4": {
+   "before": 0.57,
+   "after": 0.75
+  },
+  "q65": {
+   "before": 0.89,
+   "after": 0.89
+  },
+  "olivia": {
+   "before": 0.62,
+   "after": 0.62
+  },
+  "contestia": {
+   "before": 0.34,
+   "after": 0.34
+  },
+  "mfsk": {
+   "before": 0.62,
+   "after": 0.62
+  },
+  "thor": {
+   "before": 0.82,
+   "after": 0.82
+  },
+  "dominoex": {
+   "before": 0.97,
+   "after": 0.97
+  },
+  "mt63": {
+   "before": 0.78,
+   "after": 0.78
+  },
+  "hell": {
+   "before": 0.82,
+   "after": 0.82
+  },
+  "throb": {
+   "before": 0.93,
+   "after": 0.93
+  },
+  "sstv": {
+   "before": 0.83,
+   "after": 0.83
+  },
+  "wefax": {
+   "before": 0.94,
+   "after": 0.97
+  },
+  "ale": {
+   "before": 0.83,
+   "after": 0.83
+  },
+  "cw_beacon": {
+   "before": 0.81,
+   "after": 0.82
+  },
+  "sitorb": {
+   "before": 0.89,
+   "after": 0.9
+  },
+  "stanag4285": {
+   "before": 0.88,
+   "after": 0.88
+  },
+  "mil110_serial": {
+   "before": 0.92,
+   "after": 0.92
+  },
+  "mil110_16tone": {
+   "before": 0.84,
+   "after": 0.84
+  },
+  "mil110_39tone": {
+   "before": 0.71,
+   "after": 0.71
+  },
+  "pactor1": {
+   "before": 0.93,
+   "after": 0.93
+  },
+  "pactor2": {
+   "before": 0.93,
+   "after": 0.93
+  },
+  "pactor3": {
+   "before": 0.82,
+   "after": 0.82
+  }
+ },
+ "caveat": "dials drawn from the same lists the tie-breaker uses: an upper bound for band-plan-following operators",
+ "wall_s": 170.2
+}

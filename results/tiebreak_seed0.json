@@ -1,0 +1,63 @@
+{
+ "runs": 1300,
+ "acc_before": 0.8392307692307692,
+ "acc_after": 0.9230769230769231,
+ "fixed": 109,
+ "broken": 0,
+ "per_class": {
+  "ft8": {
+   "before": 0.63,
+   "after": 0.81
+  },
+  "cw": {
+   "before": 0.89,
+   "after": 0.9
+  },
+  "rtty": {
+   "before": 0.96,
+   "after": 0.96
+  },
+  "psk31": {
+   "before": 0.97,
+   "after": 0.97
+  },
+  "ssb": {
+   "before": 1.0,
+   "after": 1.0
+  },
+  "noise": {
+   "before": 1.0,
+   "after": 1.0
+  },
+  "ft4": {
+   "before": 1.0,
+   "after": 1.0
+  },
+  "js8": {
+   "before": 0.38,
+   "after": 0.78
+  },
+  "wspr": {
+   "before": 0.98,
+   "after": 0.99
+  },
+  "jt65": {
+   "before": 0.95,
+   "after": 0.98
+  },
+  "jt9": {
+   "before": 0.62,
+   "after": 0.95
+  },
+  "fst4": {
+   "before": 0.65,
+   "after": 0.77
+  },
+  "q65": {
+   "before": 0.88,
+   "after": 0.89
+  }
+ },
+ "caveat": "dials drawn from the same lists the tie-breaker uses: an upper bound for band-plan-following operators",
+ "wall_s": 101.4
+}

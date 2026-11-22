@@ -1,0 +1,9 @@
+{
+ "runs": 100,
+ "roundtrip_fails": 0,
+ "fuzz_cases": 1000,
+ "fuzz_unexpected_exceptions": 0,
+ "fuzz_examples": [],
+ "mocked": "sender is a test encoder, not the WSJT-X GUI",
+ "wall_s": 0.0
+}

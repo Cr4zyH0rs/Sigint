@@ -1,0 +1,57 @@
+{
+ "selcal": {
+  "code": "PR-JS",
+  "segments_s": [
+   1.01,
+   1.01,
+   1.01,
+   1.01
+  ],
+  "gaps_s": [
+   0.19,
+   2.5,
+   0.19
+  ],
+  "first_pair_hz": [
+   1121.0,
+   1371.0
+  ],
+  "expected": "1 s tone pair, 0.2 s gap, 1 s tone pair; tones per SELCAL table (+-50 Hz mistuning)"
+ },
+ "dsc": {
+  "tones_hz": [
+   1542.5954666046669,
+   1712.5954666046669
+  ],
+  "shift_hz": 170.0,
+  "obw99_hz": 311,
+  "expected": "170 Hz shift, 100 Bd, 350-500 Hz"
+ },
+ "ccir493": {
+  "longest_steady_tone_s": 3.96,
+  "meta": {
+   "submode": "pre 4.0s",
+   "centre": 1326.9722766055606
+  },
+  "shift_hz": 170.0,
+  "expected": "long CW tone preamble, 170 Hz shift, 100 Bd"
+ },
+ "hfdl": {
+  "symbol_rate_line_hz": 1800.0,
+  "centre_hz": 1432.4,
+  "obw99_hz": 2020,
+  "expected": "1440 Hz sub-carrier, 1800 Bd, 2400 Hz"
+ },
+ "msk144": {
+  "tones_hz": [
+   1042.5,
+   2032.5
+  ],
+  "packet_period_ms": [
+   72.0,
+   0.914
+  ],
+  "obw99_hz": 3057,
+  "expected": "tones 1000/2000 Hz, 2000 bps, ACF 72 ms, 2.5 kHz"
+ }
+}

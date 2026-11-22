@@ -1,0 +1,130 @@
+{
+ "olivia__OLIVIA-16_500__1092.wav": {
+  "strongest_rate_lines_hz": [
+   31.0,
+   31.5,
+   62.5
+  ],
+  "occupied_bw_20db_hz": 516
+ },
+ "olivia__OLIVIA-32_1K__1626.wav": {
+  "strongest_rate_lines_hz": [
+   31.0,
+   31.5,
+   62.5
+  ],
+  "occupied_bw_20db_hz": 1016
+ },
+ "olivia__OLIVIA-8_250__1113.wav": {
+  "strongest_rate_lines_hz": [
+   31.0,
+   31.5,
+   62.5
+  ],
+  "occupied_bw_20db_hz": 268
+ },
+ "olivia__OLIVIA-8_500__1589.wav": {
+  "strongest_rate_lines_hz": [
+   62.0,
+   62.5,
+   63.0
+  ],
+  "occupied_bw_20db_hz": 530
+ },
+ "contestia__Cont-16_500__1406.wav": {
+  "strongest_rate_lines_hz": [
+   31.0,
+   31.5,
+   62.5
+  ],
+  "occupied_bw_20db_hz": 517
+ },
+ "contestia__Cont-32_1K__802.wav": {
+  "strongest_rate_lines_hz": [
+   31.0,
+   31.5,
+   62.5
+  ],
+  "occupied_bw_20db_hz": 1016
+ },
+ "contestia__Cont-8_250__939.wav": {
+  "strongest_rate_lines_hz": [
+   31.0,
+   31.5,
+   62.5
+  ],
+  "occupied_bw_20db_hz": 268
+ },
+ "contestia__Cont-8_500__1113.wav": {
+  "strongest_rate_lines_hz": [
+   62.0,
+   62.5,
+   63.0
+  ],
+  "occupied_bw_20db_hz": 537
+ },
+ "mfsk__MFSK16__1533.wav": {
+  "strongest_rate_lines_hz": [
+   15.5,
+   47.0,
+   62.5
+  ],
+  "occupied_bw_20db_hz": 268
+ },
+ "mfsk__MFSK32__1799.wav": {
+  "strongest_rate_lines_hz": [
+   31.0,
+   62.5,
+   125.0
+  ],
+  "occupied_bw_20db_hz": 516
+ },
+ "mfsk__MFSK64__1566.wav": {
+  "strongest_rate_lines_hz": [
+   62.5,
+   125.0,
+   187.5
+  ],
+  "occupied_bw_20db_hz": 1025
+ },
+ "mfsk__MFSK8__1336.wav": {
+  "strongest_rate_lines_hz": [
+   8.0,
+   15.5,
+   23.5
+  ],
+  "occupied_bw_20db_hz": 254
+ },
+ "thor__THOR11__1166.wav": {
+  "strongest_rate_lines_hz": [
+   21.5,
+   43.0,
+   64.5
+  ],
+  "occupied_bw_20db_hz": 218
+ },
+ "thor__THOR16__852.wav": {
+  "strongest_rate_lines_hz": [
+   15.5,
+   47.0,
+   62.5
+  ],
+  "occupied_bw_20db_hz": 317
+ },
+ "thor__THOR22__876.wav": {
+  "strongest_rate_lines_hz": [
+   21.5,
+   43.0,
+   64.5
+  ],
+  "occupied_bw_20db_hz": 436
+ },
+ "thor__THOR8__1957.wav": {
+  "strongest_rate_lines_hz": [
+   15.5,
+   23.5,
+   39.0
+  ],
+  "occupied_bw_20db_hz": 298
+ }
+}

@@ -1,0 +1,22 @@
+{
+ "runs": 100,
+ "raised": 0,
+ "wrong_outcome": 0,
+ "outcomes": {
+  "down": 10,
+  "LLM unavailable (HTTP 404)": 2,
+  "ok": 68,
+  "LLM unavailable (timeout)": 3,
+  "LLM unavailable (empty response)": 7,
+  "LLM unavailable (HTTP 500)": 7,
+  "LLM unavailable (JSONDecodeError)": 3
+ },
+ "call_time": {
+  "mean": 0.3714959293299989,
+  "p50": 0.15274401550004768,
+  "p95": 1.1604039758500277,
+  "max": 3.1569939620000014
+ },
+ "mocked": "Ollama server is a local mock implementing POST /api/generate",
+ "wall_s": 37.7
+}

@@ -1,0 +1,4 @@
+classifier {"runs": 600, "accuracy": 0.96, "deterministic": true, "high_conf_share": 0.8666666666666667, "high_conf_acc": 0.9961538461538462, "wall_s": 26.5}
+occupancy {"wall_s": 9.2}
+end_to_end {"runs": 100, "label_mode": false, "crashed": 0, "logged_windows": 100, "explanations_ok": 100, "decode_rows_stored": 0, "windows_with_freq": 67, "prompts_containing_message_text": 0, "decoders_invoked": 0, "label_acc": 0.93, "ft8_end_to_end_decode": 0.0, "n_ft8": 0, "over_15s": 0, "mocked": "Ollama server mocked", "wall_s": 5.0}
+end_to_end_label {"runs": 100, "label_mode": true, "crashed": 0, "logged_windows": 100, "explanations_ok": 100, "decode_rows_stored": 32, "windows_with_freq": 74, "prompts_containing_message_text": 22, "decoders_invoked": 100, "label_acc": 0.97, "ft8_end_to_end_decode": 1.0, "n_ft8": 18, "over_15s": 0, "mocked": "Ollama server mocked; whisper model mocked; fldigi not attached", "wall_s": 87.4}

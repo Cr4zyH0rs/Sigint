@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+# Training/test audio (large, regenerate with stress/record_fldigi.py)
+*.wav
+# Older model checkpoints; only data/resnet18_modes_b6_10.pt is kept (plain git, 45 MB; under GitHub 50 MB warning)
+/*.pt
+*.sqlite
+*.db

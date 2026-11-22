@@ -1,0 +1,2 @@
+data/train_b3.npz (3200, 128, 352) 37.0s
+data/val_b3.npz (800, 128, 352) 9.8s

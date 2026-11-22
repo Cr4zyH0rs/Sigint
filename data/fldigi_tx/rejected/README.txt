@@ -1,0 +1,1 @@
+sitorb__NAVTEX__1038.wav (test): first ~12 s are energy at the carrier centre (+-5 Hz), not 170 Hz FSK; no train NAVTEX take shows this. Replaced 2026-11-20 by sitorb__NAVTEX__1810.wav (seed 31), which is clean.
