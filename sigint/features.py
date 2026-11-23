@@ -155,6 +155,11 @@ OCCUPANCY_ARGS["fsq"] = _WIDE
 # (1800 Bd PSK, 2.4 kHz) and MSK144 (2000 bps MSK, ~2.5 kHz) are wide.
 OCCUPANCY_ARGS["dsc"] = OCCUPANCY_ARGS["ccir493"] = OCCUPANCY_ARGS["pactor1"]
 OCCUPANCY_ARGS["hfdl"] = OCCUPANCY_ARGS["msk144"] = _FM_WIDE
+# Batch 8: FreeDV (1.0-1.6 kHz multi-carrier) uses the wide settings; RPR (8 carriers over
+# 480 Hz) like 8PSK; DTMF tones are 500-1000 Hz apart, so bridge wide gaps.
+for _m in ("freedv1600", "freedv700c", "freedv700de", "dtmf"):
+    OCCUPANCY_ARGS[_m] = _FM_WIDE
+OCCUPANCY_ARGS["rpr"] = _WIDE
 
 
 def occupancy_for(label: str, x: np.ndarray):

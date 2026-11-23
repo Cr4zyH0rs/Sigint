@@ -6,3 +6,4 @@ __pycache__/
 /*.pt
 *.sqlite
 *.db
+tools/freedv_tx_min

@@ -1,0 +1,77 @@
+{
+ "freedv1600": {
+  "obw99_hz": 1222,
+  "centroid_hz": 1499,
+  "expected": "14 DQPSK carriers 75 Hz apart + centre pilot, 1.125-1.3 kHz",
+  "strongest_line_hz": 1486.8
+ },
+ "freedv700C": {
+  "obw99_hz": 1458,
+  "centroid_hz": 1465,
+  "expected": "14 carriers, 1.5 kHz"
+ },
+ "freedv700D": {
+  "obw99_hz": 1166,
+  "centroid_hz": 1496,
+  "expected": "17 carriers, 1.0 kHz"
+ },
+ "freedv700E": {
+  "obw99_hz": 1646,
+  "centroid_hz": 1498,
+  "expected": "21 carriers, 1.5 kHz"
+ },
+ "rpr_bpsk": {
+  "obw99_hz": 514,
+  "expected": "8 carriers, 60 Hz, centre 1500 Hz, 500 Hz",
+  "carriers_hz": [
+   1290,
+   1350,
+   1410,
+   1470,
+   1530,
+   1590,
+   1650,
+   1710
+  ],
+  "spacing_hz": 60.1
+ },
+ "rpr_qpsk": {
+  "obw99_hz": 516,
+  "expected": "8 carriers, 60 Hz, centre 1500 Hz, 500 Hz"
+ },
+ "rpr_preamble_ms": 160.0,
+ "dtmf": {
+  "profile": "whelen",
+  "n_digits": 5,
+  "pairs": [
+   [
+    941.0,
+    1633.0
+   ],
+   [
+    852.0,
+    1336.0
+   ],
+   [
+    770.0,
+    1336.0
+   ],
+   [
+    697.0,
+    1209.0
+   ],
+   [
+    697.0,
+    1633.0
+   ]
+  ],
+  "tone_ms": [
+   41,
+   41,
+   41,
+   41,
+   41
+  ],
+  "expected": "row 697/770/852/941 + column 1209/1336/1477/1633 Hz; timing per profile"
+ }
+}

@@ -42,7 +42,9 @@ CLASSES = ["ft8", "cw", "rtty", "psk31", "ssb", "noise",
            # published descriptions in sigint/synth_b6.py)
            "psk8", "fsq", "packet", "sitora", "ndb",
            # batch 7 (sigint/synth_b7.py; msk144 = WSJT-X msk144sim)
-           "selcal", "dsc", "ccir493", "hfdl", "msk144"]
+           "selcal", "dsc", "ccir493", "hfdl", "msk144",
+           # batch 8 (sigint/synth_b8.py; FreeDV = codec2's own modulator)
+           "freedv1600", "freedv700c", "freedv700de", "rpr", "dtmf"]
 
 # --------------------------------------------------------------------------
 # Noise / SNR
@@ -403,7 +405,10 @@ def generate(label: str, rng: np.random.Generator, snr_db: float):
     elif label in CLASSES[13:21] or label in ("sitorb", "psk8"):
         from . import synth_fldigi
         x, meta = synth_fldigi.generate(label, rng, snr_db)
-    elif label in CLASSES[38:]:
+    elif label in CLASSES[43:]:
+        from . import synth_b8
+        x, meta = synth_b8.GENERATORS[label](rng, snr_db)
+    elif label in CLASSES[38:43]:
         from . import synth_b7
         x, meta = synth_b7.GENERATORS[label](rng, snr_db)
     elif label in CLASSES[34:38]:

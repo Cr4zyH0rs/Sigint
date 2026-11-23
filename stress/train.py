@@ -20,6 +20,9 @@ def load(names):
             torch.from_numpy(np.concatenate(ys)).long())
 if TAG == "mc":
     Xtr, ytr = load(["data/train_mc.npz"]); Xva, yva = load(["data/val_mc.npz"])
+if TAG == "mc8":   # batch 8: 43 classes + the new ones
+    Xtr, ytr = load(["data/train_mc.npz", "data/train_mc_b6.npz", "data/train_mc_b7.npz", "data/train_mc_b8.npz"])
+    Xva, yva = load(["data/val_mc.npz", "data/val_mc_b6.npz", "data/val_mc_b7.npz", "data/val_mc_b8.npz"])
 if TAG == "mc7":   # batch 7: 38 classes + the new ones
     Xtr, ytr = load(["data/train_mc.npz", "data/train_mc_b6.npz", "data/train_mc_b7.npz"])
     Xva, yva = load(["data/val_mc.npz", "data/val_mc_b6.npz", "data/val_mc_b7.npz"])
@@ -27,7 +30,7 @@ if TAG == "mc6":   # batch 6: earlier 33 classes + the new ones
     Xtr, ytr = load(["data/train_mc.npz", "data/train_mc_b6.npz"])
     Xva, yva = load(["data/val_mc.npz", "data/val_mc_b6.npz"])
 extra = {"b2": ["_b2"], "b3": ["_b2", "_b3"], "b4": ["_b2", "_b3", "_b4"], "b5": ["_b2", "_b3", "_b4", "_b5"]}.get(TAG, [])
-if TAG not in ("mc", "mc6", "mc7"):
+if TAG not in ("mc", "mc6", "mc7", "mc8"):
     Xtr, ytr = load(["data/train.npz"] + [f"data/train{e}.npz" for e in extra])
     Xva, yva = load(["data/val.npz"] + [f"data/val{e}.npz" for e in extra])
 N_CLASSES = int(ytr.max()) + 1

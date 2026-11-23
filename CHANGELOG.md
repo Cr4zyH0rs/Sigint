@@ -4,6 +4,17 @@ Version numbers: MINOR = signal batch (new classes and model), PATCH = fixes, to
 sigidwiki-monitor updates within a batch. Each entry links to its results document.
 Format based on https://keepachangelog.com/en/1.1.0/ .
 
+## [0.8.0] - 2026-11-23
+### Added
+- Batch 8: FreeDV 1600, 700C and 700D/E (codec2's own modulator via `tools/freedv_tx_min.c`),
+  Robust Packet Radio and DTMF (`sigint/synth_b8.py`, checks in `stress/verify_b8.py`);
+  48 classes, `data/resnet18_modes_b8_10.pt` (replaces `resnet18_modes_b7_10.pt`).
+  98.5% at SNR >= -10 dB. See `docs/batch8_results.md`.
+- `docs/signal_sources.md` (signal sources beyond sigidwiki) and `docs/batch_plan.md`
+  (batches 9-13).
+### Known issues
+- DTMF is called for 108 weak windows of other modes (catch-all); not fixed.
+
 ## [0.7.0] - 2026-11-22
 ### Added
 - Batch 7: ICAO SELCAL, GMDSS DSC, CCIR 493-4 selcall, HFDL and MSK144 (`sigint/synth_b7.py`,
