@@ -4,6 +4,16 @@ Version numbers: MINOR = signal batch (new classes and model), PATCH = fixes, to
 sigidwiki-monitor updates within a batch. Each entry links to its results document.
 Format based on https://keepachangelog.com/en/1.1.0/ .
 
+## [0.10.0] - 2026-11-23
+### Added
+- Batch 10: fldigi IFKP, PSK-R, multi-carrier PSK and OFDM (real fldigi takes, `stress/record_b10.sh`),
+  codec2 DATAC data modes (codec2's own modulator, `tools/datac_tx.c`) and HamDRM (modes A/B,
+  built from published DRM/HamDRM parameters) in `sigint/synth_b10.py`; checks in
+  `stress/verify_b10.py`. 61 classes, `data/resnet18_modes_b10_10.pt` (replaces
+  `resnet18_modes_b9_10.pt`). 98.4% at SNR >= -10 dB. See `docs/batch10_results.md`.
+### Known issues
+- HamDRM joins WWV and DTMF as catch-alls for weak signals; HamDRM mode E not built.
+
 ## [0.9.0] - 2026-11-23
 ### Added
 - Batch 9: WWV/WWVH, RWM, ARQ-E, CIS-36-50/50-50 (one class), XPA, XPA2 and Mazielka (X06)

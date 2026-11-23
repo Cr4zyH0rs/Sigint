@@ -1,0 +1,123 @@
+{
+ "fldigi_IFKP": {
+  "obw99_hz": 378,
+  "table_bw_hz": 386,
+  "takes": 7
+ },
+ "fldigi_PSK125R": {
+  "obw99_hz": 179,
+  "table_bw_hz": 125,
+  "takes": 6
+ },
+ "fldigi_PSK250R": {
+  "obw99_hz": 366,
+  "table_bw_hz": 250,
+  "takes": 7
+ },
+ "fldigi_PSK500R": {
+  "obw99_hz": 747,
+  "table_bw_hz": 500,
+  "takes": 7
+ },
+ "fldigi_PSK1000R": {
+  "obw99_hz": 1509,
+  "table_bw_hz": 1800,
+  "takes": 7
+ },
+ "fldigi_PSK63RC10": {
+  "obw99_hz": 850,
+  "table_bw_hz": 850,
+  "takes": 6
+ },
+ "fldigi_PSK125RC4": {
+  "obw99_hz": 697,
+  "table_bw_hz": 650,
+  "takes": 7
+ },
+ "fldigi_PSK250RC3": {
+  "obw99_hz": 1078,
+  "table_bw_hz": 950,
+  "takes": 7
+ },
+ "fldigi_PSK500RC2": {
+  "obw99_hz": 1603,
+  "table_bw_hz": 1400,
+  "takes": 7
+ },
+ "fldigi_OFDM500F": {
+  "obw99_hz": 439,
+  "table_bw_hz": null,
+  "takes": 7
+ },
+ "fldigi_OFDM750F": {
+  "obw99_hz": 645,
+  "table_bw_hz": null,
+  "takes": 7
+ },
+ "DATAC0": {
+  "obw99_hz": 735,
+  "burst_s_with_pre_postamble": 0.66,
+  "readme_bw_hz": 500,
+  "readme_burst_s": 0.44
+ },
+ "DATAC1": {
+  "obw99_hz": 1685,
+  "burst_s_with_pre_postamble": 4.4,
+  "readme_bw_hz": 1700,
+  "readme_burst_s": 4.18
+ },
+ "DATAC3": {
+  "obw99_hz": 721,
+  "burst_s_with_pre_postamble": 3.41,
+  "readme_bw_hz": 500,
+  "readme_burst_s": 3.19
+ },
+ "DATAC4": {
+  "obw99_hz": 302,
+  "burst_s_with_pre_postamble": 5.39,
+  "readme_bw_hz": 250,
+  "readme_burst_s": 5.17
+ },
+ "DATAC13": {
+  "obw99_hz": 264,
+  "burst_s_with_pre_postamble": 2.2,
+  "readme_bw_hz": 200,
+  "readme_burst_s": 2.0
+ },
+ "hamdrm_A_2.3": {
+  "carriers": 53,
+  "spacing_hz": 41.667,
+  "occupied_hz": 2208,
+  "obw99_hz": 2197,
+  "cp_corr_peak_ms": 24.0,
+  "symbol_ms": 26.67,
+  "expected": "ETSI ES 201 980 table 2: Tu A 24 / B 21.33 ms, Ts 26.67 ms; handbook: 2.3/2.5 kHz"
+ },
+ "hamdrm_A_2.5": {
+  "carriers": 57,
+  "spacing_hz": 41.667,
+  "occupied_hz": 2375,
+  "obw99_hz": 2364,
+  "cp_corr_peak_ms": 24.0,
+  "symbol_ms": 26.67,
+  "expected": "ETSI ES 201 980 table 2: Tu A 24 / B 21.33 ms, Ts 26.67 ms; handbook: 2.3/2.5 kHz"
+ },
+ "hamdrm_B_2.3": {
+  "carriers": 45,
+  "spacing_hz": 46.875,
+  "occupied_hz": 2109,
+  "obw99_hz": 2101,
+  "cp_corr_peak_ms": 21.33,
+  "symbol_ms": 26.67,
+  "expected": "ETSI ES 201 980 table 2: Tu A 24 / B 21.33 ms, Ts 26.67 ms; handbook: 2.3/2.5 kHz"
+ },
+ "hamdrm_B_2.5": {
+  "carriers": 51,
+  "spacing_hz": 46.875,
+  "occupied_hz": 2391,
+  "obw99_hz": 2382,
+  "cp_corr_peak_ms": 21.33,
+  "symbol_ms": 26.67,
+  "expected": "ETSI ES 201 980 table 2: Tu A 24 / B 21.33 ms, Ts 26.67 ms; handbook: 2.3/2.5 kHz"
+ }
+}

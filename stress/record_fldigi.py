@@ -23,6 +23,12 @@ MODES = {
     # https://www.sigidwiki.com/wiki/8PSK : 0.125-1.2 kHz)
     "fsq": ["FSQ"],
     "psk8": ["8PSK125", "8PSK250", "8PSK500", "8PSK1000"],
+    # batch 10: modes named in Bundscherer et al. 2025 (https://arxiv.org/html/2501.07337v1);
+    # parameters: fldigi mode table https://www.w1hkj.org/FldigiHelp/mode_table_page.html
+    "ifkp": ["IFKP"],
+    "pskr": ["PSK125R", "PSK250R", "PSK500R", "PSK1000R"],
+    "mcpsk": ["PSK63RC10", "PSK125RC4", "PSK250RC3", "PSK500RC2"],
+    "ofdm": ["OFDM500F", "OFDM750F"],
 }
 WORDS = "cq de test name qth rig ant wx tnx fer qso 73 pse k hello the is sunny rst 599 op".split()
 

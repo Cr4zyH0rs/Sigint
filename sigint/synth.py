@@ -46,7 +46,10 @@ CLASSES = ["ft8", "cw", "rtty", "psk31", "ssb", "noise",
            # batch 8 (sigint/synth_b8.py; FreeDV = codec2's own modulator)
            "freedv1600", "freedv700c", "freedv700de", "rpr", "dtmf",
            # batch 9 (sigint/synth_b9.py, from NIST, sigidwiki and Priyom descriptions)
-           "wwv", "rwm", "arqe", "cis_fsk", "xpa", "xpa2", "mazielka"]
+           "wwv", "rwm", "arqe", "cis_fsk", "xpa", "xpa2", "mazielka",
+           # batch 10 (ifkp/pskr/mcpsk/ofdm = real fldigi takes; datac = codec2's modulator;
+           # hamdrm from published DRM/HamDRM parameters in sigint/synth_b10.py)
+           "ifkp", "pskr", "mcpsk", "ofdm", "datac", "hamdrm"]
 
 # --------------------------------------------------------------------------
 # Noise / SNR
@@ -404,10 +407,13 @@ def generate(label: str, rng: np.random.Generator, snr_db: float):
     """Return (float32 15 s waveform scaled to ~0.1 RMS, metadata)."""
     if label == "noise":
         x, meta = noise_only(rng), {}
-    elif label in CLASSES[13:21] or label in ("sitorb", "psk8"):
+    elif label in CLASSES[13:21] or label in ("sitorb", "psk8", "ifkp", "pskr", "mcpsk", "ofdm"):
         from . import synth_fldigi
         x, meta = synth_fldigi.generate(label, rng, snr_db)
-    elif label in CLASSES[48:]:
+    elif label in CLASSES[59:]:
+        from . import synth_b10
+        x, meta = synth_b10.GENERATORS[label](rng, snr_db)
+    elif label in CLASSES[48:55]:
         from . import synth_b9
         x, meta = synth_b9.GENERATORS[label](rng, snr_db)
     elif label in CLASSES[43:48]:

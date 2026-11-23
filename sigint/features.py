@@ -166,6 +166,11 @@ OCCUPANCY_ARGS["rpr"] = _WIDE
 OCCUPANCY_ARGS["arqe"] = OCCUPANCY_ARGS["cis_fsk"] = OCCUPANCY_ARGS["pactor1"]
 OCCUPANCY_ARGS["xpa"] = OCCUPANCY_ARGS["wwv"] = _FM_WIDE
 OCCUPANCY_ARGS["xpa2"] = OCCUPANCY_ARGS["mazielka"] = _WIDE
+# Batch 10: all multi-carrier or MFSK 0.2-2.5 kHz wide, flat-topped -> wide settings
+for _m in ("ifkp", "pskr", "ofdm"):
+    OCCUPANCY_ARGS[_m] = _WIDE
+for _m in ("mcpsk", "datac", "hamdrm"):
+    OCCUPANCY_ARGS[_m] = _FM_WIDE
 
 
 def occupancy_for(label: str, x: np.ndarray):

@@ -7,3 +7,4 @@ __pycache__/
 *.sqlite
 *.db
 tools/freedv_tx_min
+tools/datac_tx
