@@ -1,0 +1,23 @@
+{
+ "thresholds": {
+  "wwv": 4.5,
+  "dtmf": 2.0,
+  "hamdrm": 1.5
+ },
+ "acc_ge_m10_without": 0.9890804597701149,
+ "acc_ge_m10_with": 0.9896551724137931,
+ "acc_all_without": 0.8889344262295082,
+ "acc_all_with": 0.8930327868852459,
+ "acc_ge_0_without": 0.9932756964457252,
+ "acc_ge_0_with": 0.9932756964457252,
+ "n": 2440,
+ "wwv_true_pass_ge_m10": 1.0,
+ "wwv_true_pass_all": 0.9,
+ "wwv_false_labels_blocked": "33/42",
+ "dtmf_true_pass_ge_m10": 0.967741935483871,
+ "dtmf_true_pass_all": 0.85,
+ "dtmf_false_labels_blocked": "20/22",
+ "hamdrm_true_pass_ge_m10": 1.0,
+ "hamdrm_true_pass_all": 0.775,
+ "hamdrm_false_labels_blocked": "13/22"
+}

@@ -4,6 +4,16 @@ Version numbers: MINOR = signal batch (new classes and model), PATCH = fixes, to
 sigidwiki-monitor updates within a batch. Each entry links to its results document.
 Format based on https://keepachangelog.com/en/1.1.0/ .
 
+## [0.10.1] - 2026-11-24
+### Fixed
+- Weak signals of other modes labelled WWV, DTMF or HamDRM: `sigint/signature.py` keeps those
+  labels only when the published signature is present (WWV 1 s tick, DTMF row+column tone pair,
+  DRM OFDM symbol timing), otherwise takes the next class. False labels 207 -> 65 on the
+  100-window test; accuracy 98.42% at SNR >= -10 dB, 98.89% at >= 0 dB. Thresholds tuned on
+  training windows (`stress/tune_signature.py`). See `docs/signature_check_results.md`.
+### Added
+- `stress/run_all.py` reports accuracy at SNR >= 0 dB.
+
 ## [0.10.0] - 2026-11-23
 ### Added
 - Batch 10: fldigi IFKP, PSK-R, multi-carrier PSK and OFDM (real fldigi takes, `stress/record_b10.sh`),

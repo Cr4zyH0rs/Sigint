@@ -22,7 +22,7 @@ from dataclasses import dataclass, field
 import numpy as np
 import soundfile as sf
 
-from . import acf, bandplan, decoders, features, slicer
+from . import acf, bandplan, decoders, features, signature, slicer
 from .synth import CLASSES
 from .db import Log
 from .explain import Explainer, build_prompt, build_prompt_id
@@ -101,6 +101,10 @@ class Pipeline:
         if label in acf.WIDE_MIL:
             # periodicity second opinion for look-alike military modems (sigint/acf.py)
             label, conf, probs, _ = acf.reweight(label, probs, CLASSES[:len(probs)], x12k, res.freq_hz)
+            res.label, res.confidence = label, conf
+        if label in signature.CHECKED:
+            # WWV / DTMF / HamDRM only when their published signature is present (sigint/signature.py)
+            label, conf, probs, _ = signature.reweight(label, probs, CLASSES[:len(probs)], x12k)
             res.label, res.confidence = label, conf
         t25 = time.perf_counter()
         res.timings.update(spectrogram=t1 - t0, classify=t2 - t1, occupancy=t25 - t2)

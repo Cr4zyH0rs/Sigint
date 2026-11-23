@@ -244,7 +244,10 @@ def t_classifier(n, seed, model_path=None):
             x, _ = synth.generate(c, rng, snr)
             s = clf.featurize(x)
             t = time.perf_counter()
-            lab, p, _ = clf.predict(s)
+            lab, p, probs = clf.predict(s)
+            if os.environ.get("SIGINT_SIGCHECK") == "1":
+                from sigint import signature
+                lab, p, _, _ = signature.reweight(lab, probs, C, x)
             times.append(time.perf_counter() - t)
             conf[ci, C.index(lab)] += 1
             rows.append(dict(true=c, pred=lab, p=p, snr=snr))
@@ -259,6 +262,7 @@ def t_classifier(n, seed, model_path=None):
     per_class = {c: float(conf[i, i] / conf[i].sum()) for i, c in enumerate(C)}
     # target set chosen by the user: windows at SNR >= -10 dB
     hi_rows = [r for r in rows if r["snr"] >= -10]
+    ge0 = [r for r in rows if r["snr"] >= 0]
     per_class_ge_m10 = {c: (sum(r["pred"] == c for r in hi_rows if r["true"] == c) /
                             max(1, sum(r["true"] == c for r in hi_rows))) for c in C}
     errs_ge_m10 = {}
@@ -271,6 +275,8 @@ def t_classifier(n, seed, model_path=None):
     return dict(runs=len(rows), accuracy=float(np.trace(conf) / conf.sum()), per_class=per_class,
                 acc_snr_ge_m10=sum(r["pred"] == r["true"] for r in hi_rows) / max(1, len(hi_rows)),
                 n_snr_ge_m10=len(hi_rows), per_class_snr_ge_m10=per_class_ge_m10,
+                acc_snr_ge_0=sum(r["pred"] == r["true"] for r in ge0) / max(1, len(ge0)), n_snr_ge_0=len(ge0),
+                sigcheck=os.environ.get("SIGINT_SIGCHECK") == "1",
                 errors_snr_ge_m10=dict(sorted(errs_ge_m10.items(), key=lambda kv: -kv[1])),
                 confusion=dict(labels=C, matrix=conf.tolist()), acc_by_snr_signals_only=bins,
                 deterministic=len(outs) == 1, infer_time=timing(times),
