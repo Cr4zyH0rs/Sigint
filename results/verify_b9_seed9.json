@@ -1,0 +1,177 @@
+{
+ "WWV": {
+  "marker_ms": 800,
+  "marker_hz": 1000,
+  "n_ticks_s1_44": 43,
+  "tick_ms": 5.4,
+  "tick_hz": 1000,
+  "tick_starts_s": [
+   1.0,
+   2.0,
+   3.0
+  ],
+  "silent_second_29": true,
+  "expected": "marker 800 ms (WWV 1000 / WWVH 1200 Hz); 5 ms ticks each second except 29 and 59"
+ },
+ "WWVH": {
+  "marker_ms": 800,
+  "marker_hz": 1200,
+  "n_ticks_s1_44": 43,
+  "tick_ms": 5.4,
+  "tick_hz": 1200,
+  "tick_starts_s": [
+   1.0,
+   2.0,
+   3.0
+  ],
+  "silent_second_29": true,
+  "expected": "marker 800 ms (WWV 1000 / WWVH 1200 Hz); 5 ms ticks each second except 29 and 59"
+ },
+ "WWV_minute4_tone_hz": 500,
+ "rwm_1pps": {
+  "pulse_ms": [
+   100,
+   101
+  ],
+  "median_period_s": 1.0,
+  "expected": "1 pps: 100 ms, minute 500 ms; 10 pps: 20 ms, second 40 ms, minute 500 ms"
+ },
+ "rwm_10pps": {
+  "pulse_ms": [
+   21,
+   40,
+   41,
+   521
+  ],
+  "median_period_s": 0.1,
+  "expected": "1 pps: 100 ms, minute 500 ms; 10 pps: 20 ms, second 40 ms, minute 500 ms"
+ },
+ "arqe": [
+  {
+   "set": "288Bd/400Hz",
+   "shift_hz": 400,
+   "common_runs_ms": [
+    3.5,
+    7.0
+   ]
+  },
+  {
+   "set": "96Bd/170Hz",
+   "shift_hz": 170,
+   "common_runs_ms": [
+    10.4,
+    20.8
+   ]
+  },
+  {
+   "set": "288Bd/400Hz",
+   "shift_hz": 400,
+   "common_runs_ms": [
+    3.5,
+    7.0
+   ]
+  },
+  {
+   "set": "288Bd/400Hz",
+   "shift_hz": 400,
+   "common_runs_ms": [
+    3.5,
+    7.0
+   ]
+  }
+ ],
+ "cis_fsk": [
+  {
+   "set": "CIS-50-50 50Bd/85Hz",
+   "shift_hz": 85,
+   "common_runs_ms": [
+    20.0,
+    40.0
+   ]
+  },
+  {
+   "set": "CIS-50-50 100Bd/125Hz",
+   "shift_hz": 125,
+   "common_runs_ms": [
+    10.0,
+    20.0
+   ]
+  },
+  {
+   "set": "CIS-36-50 36Bd/125Hz",
+   "shift_hz": 125,
+   "common_runs_ms": [
+    20.0,
+    27.8
+   ]
+  },
+  {
+   "set": "CIS-36-50 36Bd/85Hz",
+   "shift_hz": 85,
+   "common_runs_ms": [
+    20.0,
+    27.8
+   ]
+  }
+ ],
+ "xpa": {
+  "tones_hz": [
+   520.0,
+   600.0,
+   680.0,
+   720.0,
+   760.0,
+   800.0,
+   840.0,
+   880.0,
+   920.0,
+   960.0,
+   1000.0,
+   1040.0,
+   1080.0,
+   1120.0,
+   1160.0,
+   1200.0,
+   1280.0
+  ],
+  "n_tones": 17,
+  "symbol_ms": 100,
+  "expected": "17 tones: 520,600,680,720,760-1120 (40 Hz),1160,1200,1280; 10 Bd"
+ },
+ "xpa2": {
+  "tones_hz": [
+   1000.0,
+   1031.25,
+   1046.875,
+   1078.125,
+   1093.75,
+   1109.375,
+   1125.0,
+   1140.625,
+   1156.25,
+   1171.875,
+   1187.5,
+   1203.125,
+   1218.75,
+   1234.375
+  ],
+  "n_tones": 14,
+  "spacing_hz": 15.625,
+  "symbol_ms": 128.0,
+  "expected": "16 tones 15.625 Hz apart from 1000 Hz, 7.8125 Bd"
+ },
+ "mazielka": {
+  "call_s": 2.0,
+  "pause_s": 1.32,
+  "tones_hz": [
+   773,
+   803,
+   830,
+   871,
+   905,
+   947
+  ],
+  "dial_offset_hz": -41.4,
+  "expected": "6 tones 815-990 Hz (+-5 Hz, plus dial offset), 333 ms each (2.0 s), ~1.32 s pause"
+ }
+}

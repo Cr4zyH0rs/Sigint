@@ -4,6 +4,17 @@ Version numbers: MINOR = signal batch (new classes and model), PATCH = fixes, to
 sigidwiki-monitor updates within a batch. Each entry links to its results document.
 Format based on https://keepachangelog.com/en/1.1.0/ .
 
+## [0.9.0] - 2026-11-23
+### Added
+- Batch 9: WWV/WWVH, RWM, ARQ-E, CIS-36-50/50-50 (one class), XPA, XPA2 and Mazielka (X06)
+  (`sigint/synth_b9.py`, checks in `stress/verify_b9.py`); 55 classes,
+  `data/resnet18_modes_b9_10.pt` (replaces `resnet18_modes_b8_10.pt`). 98.4% at SNR >= -10 dB.
+  See `docs/batch9_results.md`.
+### Removed
+- Codan Selcall and XPB from the batch 9 plan: no usable spec found.
+### Known issues
+- WWV is 90% at SNR >= -10 dB; WWV and DTMF act as catch-alls for weak bursty signals.
+
 ## [0.8.0] - 2026-11-23
 ### Added
 - Batch 8: FreeDV 1600, 700C and 700D/E (codec2's own modulator via `tools/freedv_tx_min.c`),

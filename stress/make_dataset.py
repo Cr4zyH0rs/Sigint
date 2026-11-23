@@ -40,6 +40,11 @@ if __name__ == "__main__":
         os.environ["SIGINT_FLDIGI_SPLIT"] = "train"
         build(n, 9, -16, 15, "data/train_mc.npz")
         build(100, 9 * 10**7, -16, 15, "data/val_mc.npz")
+    elif len(sys.argv) > 2 and sys.argv[2] == "mc9":
+        os.environ["SIGINT_FLDIGI_SPLIT"] = "train"
+        new = synth.CLASSES[48:]
+        build(n, 11, -16, 15, "data/train_mc_b9.npz", new)
+        build(100, 11 * 10**7, -16, 15, "data/val_mc_b9.npz", new)
     elif len(sys.argv) > 2 and sys.argv[2] == "mc8":
         os.environ["SIGINT_FLDIGI_SPLIT"] = "train"
         new = synth.CLASSES[43:]

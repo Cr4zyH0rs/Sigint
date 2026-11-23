@@ -160,6 +160,12 @@ OCCUPANCY_ARGS["hfdl"] = OCCUPANCY_ARGS["msk144"] = _FM_WIDE
 for _m in ("freedv1600", "freedv700c", "freedv700de", "dtmf"):
     OCCUPANCY_ARGS[_m] = _FM_WIDE
 OCCUPANCY_ARGS["rpr"] = _WIDE
+# Batch 9: ARQ-E and CIS FSK are two-tone FSK (pair method below); XPA (520-1280 Hz) and
+# WWV (tones and ticks 440-1500 Hz) are spread out, so bridge wide gaps; XPA2 and Mazielka
+# are ~250 Hz MFSK like FSQ; RWM is one keyed carrier (default settings).
+OCCUPANCY_ARGS["arqe"] = OCCUPANCY_ARGS["cis_fsk"] = OCCUPANCY_ARGS["pactor1"]
+OCCUPANCY_ARGS["xpa"] = OCCUPANCY_ARGS["wwv"] = _FM_WIDE
+OCCUPANCY_ARGS["xpa2"] = OCCUPANCY_ARGS["mazielka"] = _WIDE
 
 
 def occupancy_for(label: str, x: np.ndarray):
