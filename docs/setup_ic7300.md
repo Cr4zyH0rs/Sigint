@@ -1,6 +1,6 @@
 # Setup guide: running sigint on your own computer with the IC-7300
 
-Version 0.11.1, written 2026-11-24. The pipeline only identifies signals. It names the mode and
+Version 0.12.0, written 2026-11-24. The pipeline only identifies signals. It names the mode and
 logs the time, audio offset, bandwidth and confidence. It never decodes or stores message text.
 
 ## 1. Get the code and the model
@@ -9,7 +9,7 @@ logs the time, audio offset, bandwidth and confidence. It never decodes or store
 git clone https://github.com/Cr4zyH0rs/Sigint.git sigint
 cd sigint
 ```
-The newest model, `data/resnet18_modes_b11_10.pt` (66 classes), is in the repo.
+The newest model, `data/resnet18_modes_b14_10.pt` (71 classes), is in the repo.
 
 ## 2. Install Python packages
 
@@ -33,6 +33,16 @@ pip install numpy==2.5.3 scipy==1.18.1 librosa==1.0.1 soundfile==0.14.0 sounddev
 
 Turn AGC and noise reduction off, or set them low. They change the audio the model was trained on. This is my recommendation; none of the sources above states it.
 
+### IC-7100 (VHF/UHF FM signals, batch 14)
+
+The steps are the same. Set the radio to FM and set these:
+- ACC/USB Output Select = AF.
+- USB Audio SQL = OFF (OPEN), so the audio is not gated by squelch. Both are in the Connectors menu ([IC-7100 manual p. 190](https://www.manualslib.com/manual/1419805/Icom-Ic-7100.html?page=190)).
+
+Useful checks:
+- APRS on 144.390 MHz (North America) or 144.800 MHz (Europe) ([sigidwiki](https://www.sigidwiki.com/wiki/APRS)).
+- NOAA Weather Radio alerts.
+
 ## 4. Find the audio device name
 
 ```
@@ -43,12 +53,12 @@ This lists every audio device ([sounddevice docs](https://python-sounddevice.rea
 ## 5. Run it
 
 ```
-python -m sigint.pipeline --model data/resnet18_modes_b11_10.pt --device "USB Audio CODEC" --dial-hz 14074000 --no-llm --db sigint.sqlite
+python -m sigint.pipeline --model data/resnet18_modes_b14_10.pt --device "USB Audio CODEC" --dial-hz 14074000 --no-llm --db sigint.sqlite
 ```
 - Every 15 s on the UTC boundary, it logs one window: the mode label, confidence, audio offset (Hz), bandwidth and rough SNR.
 - `--dial-hz` is the rig's dial frequency. It helps tell FT8 from JS8, and JT9 from WSPR and FST4 (`sigint/bandplan.py`). Change it when you change band.
 - `--no-llm` skips the explanation. To get short plain-English notes instead, install [Ollama](https://ollama.com) and run `ollama pull llama3.2:3b`. Then leave out `--no-llm`. The pipeline calls Ollama at `http://localhost:11434`.
-- To test without the rig: `python -m sigint.pipeline --model data/resnet18_modes_b11_10.pt --no-llm --wav file.wav`.
+- To test without the rig: `python -m sigint.pipeline --model data/resnet18_modes_b14_10.pt --no-llm --wav file.wav`.
 
 ## 6. Where results go
 

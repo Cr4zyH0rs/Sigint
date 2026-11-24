@@ -26,6 +26,9 @@ def load(names):
             torch.from_numpy(np.concatenate(ys)).long())
 if TAG == "mc":
     Xtr, ytr = load(["data/train_mc.npz"]); Xva, yva = load(["data/val_mc.npz"])
+if TAG == "mc14":  # batch 14: 66 classes + the IC-7100 VHF/UHF ones
+    Xtr, ytr = load([f"data/train_mc{e}.npz" for e in ("", "_b6", "_b7", "_b8", "_b9", "_b10", "_b11", "_b14")])
+    Xva, yva = load([f"data/val_mc{e}.npz" for e in ("", "_b6", "_b7", "_b8", "_b9", "_b10", "_b11", "_b14")])
 if TAG == "mc11":  # batch 11: 61 classes + the new ones
     Xtr, ytr = load([f"data/train_mc{e}.npz" for e in ("", "_b6", "_b7", "_b8", "_b9", "_b10", "_b11")])
     Xva, yva = load([f"data/val_mc{e}.npz" for e in ("", "_b6", "_b7", "_b8", "_b9", "_b10", "_b11")])
@@ -45,7 +48,7 @@ if TAG == "mc6":   # batch 6: earlier 33 classes + the new ones
     Xtr, ytr = load(["data/train_mc.npz", "data/train_mc_b6.npz"])
     Xva, yva = load(["data/val_mc.npz", "data/val_mc_b6.npz"])
 extra = {"b2": ["_b2"], "b3": ["_b2", "_b3"], "b4": ["_b2", "_b3", "_b4"], "b5": ["_b2", "_b3", "_b4", "_b5"]}.get(TAG, [])
-if TAG not in ("mc", "mc6", "mc7", "mc8", "mc9", "mc10", "mc11"):
+if TAG not in ("mc", "mc6", "mc7", "mc8", "mc9", "mc10", "mc11", "mc14"):
     Xtr, ytr = load(["data/train.npz"] + [f"data/train{e}.npz" for e in extra])
     Xva, yva = load(["data/val.npz"] + [f"data/val{e}.npz" for e in extra])
 N_CLASSES = int(ytr.max()) + 1

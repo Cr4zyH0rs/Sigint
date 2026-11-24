@@ -51,7 +51,9 @@ CLASSES = ["ft8", "cw", "rtty", "psk31", "ssb", "noise",
            # hamdrm from published DRM/HamDRM parameters in sigint/synth_b10.py)
            "ifkp", "pskr", "mcpsk", "ofdm", "datac", "hamdrm",
            # batch 11 (sigint/synth_b11.py, from Shoc and sigidwiki parameters)
-           "stanag4539", "stanag4529", "ale3g", "link11_slew", "stanag4481"]
+           "stanag4539", "stanag4529", "ale3g", "link11_slew", "stanag4481",
+           # batch 14 (IC-7100 VHF/UHF FM; sigint/synth_b14.py)
+           "aprs", "pocsag", "same", "mdc1200", "selcall_ccir"]
 
 # --------------------------------------------------------------------------
 # Noise / SNR
@@ -412,7 +414,10 @@ def generate(label: str, rng: np.random.Generator, snr_db: float):
     elif label in CLASSES[13:21] or label in ("sitorb", "psk8", "ifkp", "pskr", "mcpsk", "ofdm"):
         from . import synth_fldigi
         x, meta = synth_fldigi.generate(label, rng, snr_db)
-    elif label in CLASSES[61:]:
+    elif label in CLASSES[66:]:
+        from . import synth_b14
+        x, meta = synth_b14.GENERATORS[label](rng, snr_db)
+    elif label in CLASSES[61:66]:
         from . import synth_b11
         x, meta = synth_b11.GENERATORS[label](rng, snr_db)
     elif label in CLASSES[59:61]:

@@ -4,6 +4,15 @@ Version numbers: MINOR = signal batch (new classes and model), PATCH = fixes, to
 sigidwiki-monitor updates within a batch. Each entry links to its results document.
 Format based on https://keepachangelog.com/en/1.1.0/ .
 
+## [0.12.0] - 2026-11-24
+### Added
+- Batch 14, IC-7100 VHF/UHF (docs/batch14_results.md): APRS (Dire Wolf modulator), POCSAG
+  (ITU-R M.584-2), NOAA/EAS SAME (47 CFR 11.31, minimodem), MDC-1200 and CCIR 5-tone selcall.
+  71-class model data/resnet18_modes_b14_10.pt: 98.41% at SNR >= -10 dB, 99.11% at >= 0 dB
+  with signature checks. ACARS and FLEX dropped (no physical-layer source found).
+### Changed
+- The 66-class model is replaced by the 71-class one; setup guide points to it.
+
 ## [0.11.2] - 2026-11-24
 ### Added
 - docs/setup_ic7300.md: one-page guide to running the ID-only pipeline on your own computer

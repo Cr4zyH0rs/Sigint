@@ -177,6 +177,10 @@ for _m in ("stanag4539", "stanag4529", "ale3g", "link11_slew"):
     OCCUPANCY_ARGS[_m] = _FM_WIDE
 OCCUPANCY_ARGS["stanag4481"] = OCCUPANCY_ARGS["pactor1"]
 
+# Batch 14: AFSK / tone-sequence modes spread over 1-2.3 kHz; POCSAG is baseband NRZ
+for _m in ("aprs", "same", "mdc1200", "selcall_ccir", "pocsag"):
+    OCCUPANCY_ARGS[_m] = _FM_WIDE
+
 
 def occupancy_for(label: str, x: np.ndarray):
     fc, bw, pk = occupancy(x, **OCCUPANCY_ARGS.get(label, {}))

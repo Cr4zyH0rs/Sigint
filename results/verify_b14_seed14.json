@@ -1,0 +1,96 @@
+{
+ "aprs": {
+  "frames_sent": 10,
+  "frames_accepted_by_multimon": 10,
+  "tones_hz": [
+   1195,
+   2205
+  ],
+  "published": "Bell 202 1200/2200 Hz, 1200 bit/s"
+ },
+ "pocsag_512": {
+  "address_codewords_sent": 4,
+  "accepted_raw": 4,
+  "accepted_deemphasis": 4,
+  "accepted_30_3000Hz": 0,
+  "accepted_300_3000Hz": 0,
+  "preamble_bits": 576,
+  "sync": "0x7cd215d8",
+  "published": "ITU-R M.584-2: >= 576-bit preamble, sync 0x7CD215D8, 16 codewords/batch"
+ },
+ "pocsag_1200": {
+  "address_codewords_sent": 5,
+  "accepted_raw": 5,
+  "accepted_deemphasis": 5,
+  "accepted_30_3000Hz": 0,
+  "accepted_300_3000Hz": 0,
+  "preamble_bits": 576,
+  "sync": "0x7cd215d8",
+  "published": "ITU-R M.584-2: >= 576-bit preamble, sync 0x7CD215D8, 16 codewords/batch"
+ },
+ "pocsag_2400": {
+  "address_codewords_sent": 6,
+  "accepted_raw": 5,
+  "accepted_deemphasis": 1,
+  "accepted_30_3000Hz": 4,
+  "accepted_300_3000Hz": 0,
+  "preamble_bits": 576,
+  "sync": "0x7cd215d8",
+  "published": "ITU-R M.584-2: >= 576-bit preamble, sync 0x7CD215D8, 16 codewords/batch"
+ },
+ "same": {
+  "header_bursts_sent": 3,
+  "decoded_messages": 1,
+  "tones_hz": [
+   1565,
+   2085
+  ],
+  "bit_ms": 1.92,
+  "preamble_bytes": "16 x 0xAB",
+  "published": "520.83 bit/s, 2083.3/1562.5 Hz, 1.92 ms bits, 16 x 0xAB, header x3 with 1 s pauses"
+ },
+ "mdc1200": {
+  "tones_hz": [
+   1175,
+   1795
+  ],
+  "burst_ms": 146.7,
+  "published": "1200 Bd, 1200/1800 Hz"
+ },
+ "selcall_CCIR-1": {
+  "tones_hz": [
+   1124,
+   1197,
+   2110,
+   1275,
+   1358
+  ],
+  "expected_hz": [
+   1124,
+   1197,
+   2110,
+   1275,
+   1358
+  ],
+  "tone_ms": 100.0,
+  "published": "sigidwiki CCIR tones; CCIR-1 100 ms, CCIR-2 70 ms; repeat tone E 2110 Hz"
+ },
+ "selcall_CCIR-2": {
+  "tones_hz": [
+   1124,
+   1197,
+   2110,
+   1275,
+   1358
+  ],
+  "expected_hz": [
+   1124,
+   1197,
+   2110,
+   1275,
+   1358
+  ],
+  "tone_ms": 70.0,
+  "published": "sigidwiki CCIR tones; CCIR-1 100 ms, CCIR-2 70 ms; repeat tone E 2110 Hz"
+ }
+}
