@@ -4,6 +4,19 @@ Version numbers: MINOR = signal batch (new classes and model), PATCH = fixes, to
 sigidwiki-monitor updates within a batch. Each entry links to its results document.
 Format based on https://keepachangelog.com/en/1.1.0/ .
 
+## [0.11.0] - 2026-11-24
+### Added
+- Batch 11 (docs/batch11_results.md): STANAG 4539, STANAG 4529, 3G ALE (STANAG 4538), Link-11
+  SLEW and STANAG 4481 FSK, built from Shoc and sigidwiki parameters (sigint/synth_b11.py).
+  66-class model data/resnet18_modes_b11_10.pt: 98.20% at SNR >= -10 dB, 99.04% at >= 0 dB.
+  STANAG 4197, Link-11 CLEW and STANAG 4481 PSK are reported as existing classes
+  (mil110_39tone, mil110_16tone, stanag4285).
+- STANAG 4539 signature check (ACF 119.6 ms) in sigint/signature.py; a 3G ALE check is present
+  but switched off.
+### Changed
+- stress/train.py: SIGINT_MMAP=1 keeps the training array on disk (66 classes no longer fit in RAM).
+- The 61-class model is replaced by the 66-class one.
+
 ## [0.10.1] - 2026-11-24
 ### Fixed
 - Weak signals of other modes labelled WWV, DTMF or HamDRM: `sigint/signature.py` keeps those

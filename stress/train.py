@@ -9,17 +9,26 @@ OUT = sys.argv[3] if len(sys.argv) > 3 else TAG   # output name, e.g. b5e15 for 
 def load(names):
     # fill one preallocated array file by file: np.concatenate held every part plus the
     # result in RAM (about 2x the dataset), too much once batch 7 was added
+    # Batch 11 (66 classes, ~12.5 GB as float16) no longer fits in RAM next to a decompressed
+    # part, so with SIGINT_MMAP=1 the array is a memory-mapped .npy on disk instead.
     ys = [np.load(n)["y"] for n in names]
     X = None; i = 0
     for n in names:
         part = np.load(n)["X"]
         if X is None:
-            X = np.empty((sum(len(y) for y in ys),) + part.shape[1:], part.dtype)
+            shape = (sum(len(y) for y in ys),) + part.shape[1:]
+            if os.environ.get("SIGINT_MMAP"):
+                X = np.lib.format.open_memmap(f"data/mmap_{OUT}_{os.path.basename(names[0])}.npy", "w+", part.dtype, shape)
+            else:
+                X = np.empty(shape, part.dtype)
         X[i:i + len(part)] = part; i += len(part); del part
     return (torch.from_numpy(X[:, None] if X.ndim == 3 else X),
             torch.from_numpy(np.concatenate(ys)).long())
 if TAG == "mc":
     Xtr, ytr = load(["data/train_mc.npz"]); Xva, yva = load(["data/val_mc.npz"])
+if TAG == "mc11":  # batch 11: 61 classes + the new ones
+    Xtr, ytr = load([f"data/train_mc{e}.npz" for e in ("", "_b6", "_b7", "_b8", "_b9", "_b10", "_b11")])
+    Xva, yva = load([f"data/val_mc{e}.npz" for e in ("", "_b6", "_b7", "_b8", "_b9", "_b10", "_b11")])
 if TAG == "mc10":  # batch 10: 55 classes + the new ones
     Xtr, ytr = load([f"data/train_mc{e}.npz" for e in ("", "_b6", "_b7", "_b8", "_b9", "_b10")])
     Xva, yva = load([f"data/val_mc{e}.npz" for e in ("", "_b6", "_b7", "_b8", "_b9", "_b10")])
@@ -36,7 +45,7 @@ if TAG == "mc6":   # batch 6: earlier 33 classes + the new ones
     Xtr, ytr = load(["data/train_mc.npz", "data/train_mc_b6.npz"])
     Xva, yva = load(["data/val_mc.npz", "data/val_mc_b6.npz"])
 extra = {"b2": ["_b2"], "b3": ["_b2", "_b3"], "b4": ["_b2", "_b3", "_b4"], "b5": ["_b2", "_b3", "_b4", "_b5"]}.get(TAG, [])
-if TAG not in ("mc", "mc6", "mc7", "mc8", "mc9", "mc10"):
+if TAG not in ("mc", "mc6", "mc7", "mc8", "mc9", "mc10", "mc11"):
     Xtr, ytr = load(["data/train.npz"] + [f"data/train{e}.npz" for e in extra])
     Xva, yva = load(["data/val.npz"] + [f"data/val{e}.npz" for e in extra])
 N_CLASSES = int(ytr.max()) + 1

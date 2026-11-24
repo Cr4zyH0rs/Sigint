@@ -8,7 +8,7 @@ from sigint import synth, signature as sg
 from sigint.model import Classifier
 
 n = int(sys.argv[1]) if len(sys.argv) > 1 else 40
-rows_f = "results/signature_tune_rows.json"
+rows_f = os.environ.get("SIGINT_TUNE_ROWS", "results/signature_tune_rows.json")
 clf = Classifier(os.environ["SIGINT_MODEL"])
 C = synth.CLASSES[:clf.model.fc.out_features]
 rng = np.random.default_rng(77)
@@ -42,9 +42,11 @@ def acc(th, lo=-10):
     rr = [r for r in rows if r["snr"] >= lo]
     return sum(apply(r, th) == r["true"] for r in rr) / len(rr)
 
-grid = {"wwv": np.round(np.arange(0, 30.1, 0.5), 2), "dtmf": np.arange(0, 60, 2), "hamdrm": np.round(np.arange(1, 6.01, 0.1), 2)}
+grid = {"wwv": np.round(np.arange(0, 30.1, 0.5), 2), "dtmf": np.arange(0, 60, 2), "hamdrm": np.round(np.arange(1, 6.01, 0.1), 2),
+        "stanag4539": np.r_[-99, np.round(np.arange(0, 15.01, 0.5), 2)],
+        "ale3g": np.r_[-99, np.round(np.arange(-5, 15.01, 0.5), 2)]}   # -99 = check off
 base = acc({})
-th = {"wwv": 0.0, "dtmf": 0, "hamdrm": 1.0}
+th = {m: float(g[0]) for m, g in grid.items()}   # start with nothing blocked
 for _ in range(3):                     # coordinate ascent
     for m in grid:
         # most windows right at all SNRs, without losing any accuracy at SNR >= -10 dB

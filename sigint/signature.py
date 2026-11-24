@@ -23,6 +23,13 @@ published signature; otherwise the next most likely class is used instead.
             symbol timing rather than the pilot layout, which is assumed in our generator and
             would make the check circular.)
 
+Added in batch 11, when two new classes became catch-alls (results/classifier_b11_10_seed5.json):
+  STANAG 4539  ACF 119.6 ms (https://www.sigidwiki.com/wiki/STANAG_4539). Test: robust z-score of the
+               complex-baseband |ACF| at 119.58 ms (287 symbols at 2400 Bd) against lags 80-160 ms.
+  3G ALE       8-PSK at 2400 Bd centred at 1800 Hz
+               (https://www.sigidwiki.com/wiki/Automatic_Link_Establishment_(3G_ALE_ARCS)). Test: dB by
+               which the 2400 Hz symbol-rate line of the squared envelope stands above 300-3000 Hz.
+
 Thresholds are set by stress/tune_signature.py on training-seed windows (not the test windows).
 """
 from __future__ import annotations
@@ -31,8 +38,8 @@ import numpy as np
 from scipy.signal import butter, sosfiltfilt
 
 FS = 12000
-THRESH = {"wwv": 3.0, "dtmf": 2, "hamdrm": 3.0}      # overwritten by tuning (see below)
-CHECKED = ("wwv", "dtmf", "hamdrm")
+THRESH = {"wwv": 3.0, "dtmf": 2, "hamdrm": 3.0, "stanag4539": 0.0, "ale3g": 0.0}  # overwritten by tuning
+CHECKED = ("wwv", "dtmf", "hamdrm", "stanag4539", "ale3g")
 
 
 def _bp(x, f, half_bw):
@@ -110,7 +117,26 @@ def hamdrm_score(x: np.ndarray) -> float:
     return out
 
 
-SCORES = {"wwv": wwv_score, "dtmf": dtmf_score, "hamdrm": hamdrm_score}
+def stanag4539_score(x: np.ndarray) -> float:
+    from .acf import acf_profile
+    lags, r = acf_profile(x, 1800.0, 80.0, 160.0)
+    pk = float(r[np.abs(lags - 119.58) <= 0.5].max())
+    med = np.median(r)
+    mad = np.median(np.abs(r - med)) + 1e-12
+    return float((pk - med) / (1.4826 * mad))
+
+
+def ale3g_score(x: np.ndarray) -> float:
+    from scipy.signal import hilbert, welch
+    e = np.abs(hilbert(x)) ** 2
+    f, p = welch(e - e.mean(), FS, nperseg=FS)
+    band = (f > 300) & (f < 3000)
+    k = np.abs(f - 2400) <= 1
+    return float(10 * np.log10(p[k].max() / (np.median(p[band]) + 1e-30)))
+
+
+SCORES = {"wwv": wwv_score, "dtmf": dtmf_score, "hamdrm": hamdrm_score,
+          "stanag4539": stanag4539_score, "ale3g": ale3g_score}
 
 
 def passes(label: str, x: np.ndarray) -> bool:

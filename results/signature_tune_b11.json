@@ -1,0 +1,31 @@
+{
+ "thresholds": {
+  "wwv": 4.0,
+  "dtmf": 0.0,
+  "hamdrm": 1.0,
+  "stanag4539": 1.5,
+  "ale3g": -1.5
+ },
+ "acc_ge_m10_without": 0.9904255319148936,
+ "acc_ge_m10_with": 0.9904255319148936,
+ "acc_all_without": 0.8810606060606061,
+ "acc_all_with": 0.8833333333333333,
+ "acc_ge_0_without": 0.9955555555555555,
+ "acc_ge_0_with": 0.9955555555555555,
+ "n": 2640,
+ "wwv_true_pass_ge_m10": 1.0,
+ "wwv_true_pass_all": 0.9,
+ "wwv_false_labels_blocked": "12/29",
+ "dtmf_true_pass_ge_m10": 1.0,
+ "dtmf_true_pass_all": 1.0,
+ "dtmf_false_labels_blocked": "0/22",
+ "hamdrm_true_pass_ge_m10": 1.0,
+ "hamdrm_true_pass_all": 0.95,
+ "hamdrm_false_labels_blocked": "8/30",
+ "stanag4539_true_pass_ge_m10": 1.0,
+ "stanag4539_true_pass_all": 0.9,
+ "stanag4539_false_labels_blocked": "13/30",
+ "ale3g_true_pass_ge_m10": 1.0,
+ "ale3g_true_pass_all": 1.0,
+ "ale3g_false_labels_blocked": "0/16"
+}

@@ -1,0 +1,95 @@
+{
+ "stanag4539_3200": {
+  "constellation_points": 4,
+  "obw99_hz": 2502,
+  "baud_line_db_at_2400": 15.6,
+  "acf_peak_ms": 119.58,
+  "published": "2400 Bd, 3000 Hz, ACF 119.6 ms"
+ },
+ "stanag4539_4800": {
+  "constellation_points": 8,
+  "obw99_hz": 2502,
+  "baud_line_db_at_2400": 15.1,
+  "acf_peak_ms": 119.58,
+  "published": "2400 Bd, 3000 Hz, ACF 119.6 ms"
+ },
+ "stanag4539_6400": {
+  "constellation_points": 16,
+  "obw99_hz": 2502,
+  "baud_line_db_at_2400": 12.9,
+  "acf_peak_ms": 119.58,
+  "published": "2400 Bd, 3000 Hz, ACF 119.6 ms"
+ },
+ "stanag4539_8000": {
+  "constellation_points": 32,
+  "obw99_hz": 2499,
+  "baud_line_db_at_2400": 12.9,
+  "acf_peak_ms": 119.58,
+  "published": "2400 Bd, 3000 Hz, ACF 119.6 ms"
+ },
+ "stanag4539_9600": {
+  "constellation_points": 64,
+  "obw99_hz": 2508,
+  "baud_line_db_at_2400": 13.1,
+  "acf_peak_ms": 119.58,
+  "published": "2400 Bd, 3000 Hz, ACF 119.6 ms"
+ },
+ "stanag4539_12800": {
+  "constellation_points": 64,
+  "obw99_hz": 2502,
+  "baud_line_db_at_2400": 12.6,
+  "acf_peak_ms": 119.58,
+  "published": "2400 Bd, 3000 Hz, ACF 119.6 ms"
+ },
+ "stanag4529": {
+  "obw99_hz": 1184,
+  "baud_line_db_at_1200": 36.3,
+  "acf_peak_ms": 213.33,
+  "published": "1200 Bd, 1240-1300 Hz, ACF 213.32 ms"
+ },
+ "ale3g": {
+  "burst_ms": {
+   "BW0": 613.33,
+   "BW1": 1306.67,
+   "BW2 n=3": 1840.0,
+   "BW3 n=64": 1226.67,
+   "BW4": 640.0,
+   "BW5": 1013.33
+  },
+  "published_ms": "BW0 613.333, BW1 1306.67, BW2 640+3*400=1840, BW3 373.33+64*13.33=1226.4, BW4 640, BW5 1013.33",
+  "bw3_acf_peak_ms": 13.33,
+  "published_acf": "13.3 ms",
+  "obw99_hz": 2514,
+  "baud_line_db_at_2400": 15.9
+ },
+ "link11_slew": {
+  "obw99_hz": 2505,
+  "baud_line_db_at_2400": 14.4,
+  "published": "8PSK 2400 Bd 3000 Hz, bursts 0.1-2.0 s, pause >= 4 ms"
+ },
+ "stanag4481_75": {
+  "shift_hz": 850,
+  "bit_ms": 13.33,
+  "published": "850 Hz shift, 75 Bd (13.33 ms)"
+ },
+ "stanag4481_100": {
+  "shift_hz": 850,
+  "bit_ms": 10.0,
+  "published": "850 Hz shift, 100 Bd (10.00 ms)"
+ },
+ "stanag4481_150": {
+  "shift_hz": 850,
+  "bit_ms": 6.67,
+  "published": "850 Hz shift, 150 Bd (6.67 ms)"
+ },
+ "stanag4481_300": {
+  "shift_hz": 850,
+  "bit_ms": 3.33,
+  "published": "850 Hz shift, 300 Bd (3.33 ms)"
+ },
+ "stanag4481_600": {
+  "shift_hz": 850,
+  "bit_ms": 1.67,
+  "published": "850 Hz shift, 600 Bd (1.67 ms)"
+ }
+}

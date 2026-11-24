@@ -172,6 +172,11 @@ for _m in ("ifkp", "pskr", "ofdm"):
 for _m in ("mcpsk", "datac", "hamdrm"):
     OCCUPANCY_ARGS[_m] = _FM_WIDE
 
+# Batch 11: wide serial PSK (2400/1200 Bd) like STANAG 4285; STANAG 4481 is two-tone FSK
+for _m in ("stanag4539", "stanag4529", "ale3g", "link11_slew"):
+    OCCUPANCY_ARGS[_m] = _FM_WIDE
+OCCUPANCY_ARGS["stanag4481"] = OCCUPANCY_ARGS["pactor1"]
+
 
 def occupancy_for(label: str, x: np.ndarray):
     fc, bw, pk = occupancy(x, **OCCUPANCY_ARGS.get(label, {}))
