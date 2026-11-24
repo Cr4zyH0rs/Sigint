@@ -112,7 +112,22 @@ The tuner (`stress/tune_signature.py`, 40 training-seed windows per class) propo
 
 **3G ALE is now where most blocked windows end up.** It went from 46 to 102 false labels, mostly from DTMF (12), 2G ALE (8), Link-11 SLEW (8) and HamDRM (7). These windows are below −10 dB. The checks move weak guesses from one label to another rather than making them right.
 
-**One possible next step:** report "unknown" when the top label fails its check, instead of taking the next choice. On the tuning windows this cut wrong labels from 308 to 241, made no difference at 0 dB and up, and lowered all-SNR accuracy from 88.3% to 87.8%.
+### 4a. "Unknown" instead of a second guess (v0.11.1)
+
+You chose this on 2026-11-24. Now, when the top label fails its check, the pipeline reports "unknown" instead of the model's next choice (`sigint/signature.reweight`). Test: `results/classifier_b11_10_unknown_seed5.json`, same 100 windows per mode.
+
+| | Next choice (v0.11.0) | **Unknown (v0.11.1)** |
+|---|---|---|
+| Windows given a wrong mode label | 807 | **612** |
+| False labels on WWV, DTMF, HamDRM, STANAG 4539, 3G ALE | 205 | **113** |
+| Windows reported "unknown" | 0 | 229 (9 at −10 dB and up, 1 at 0 dB and up) |
+| All windows correct | 87.77% | 87.26% |
+| SNR −10 dB and up | 98.20% | **98.10%** |
+| SNR 0 dB and up | 99.04% | **99.00%** |
+
+- 3G ALE false labels fell from 102 to 46, back to the level with no checks at all.
+- In these figures an "unknown" counts as wrong. That is why accuracy falls slightly.
+- ID-only end-to-end run: no crashes, nothing decoded or stored, label accuracy 86%.
 
 ## 5. ID-only end-to-end (100 windows)
 

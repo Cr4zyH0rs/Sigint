@@ -143,22 +143,18 @@ def passes(label: str, x: np.ndarray) -> bool:
     return SCORES[label](x) >= THRESH[label]
 
 
+UNKNOWN = "unknown"
+
+
 def reweight(label, probs, classes, x):
-    """Keep `label` if its signature is present; otherwise take the most likely class whose
-    signature is present (unchecked classes always pass). Returns (label, conf, probs, note)."""
-    if label not in CHECKED:
-        return label, float(probs[classes.index(label)]), probs, None
-    p = np.array(probs, float)
-    tried = []
-    for i in np.argsort(-p):
-        c = classes[i]
-        if c in CHECKED:
-            tried.append(c)
-            if not passes(c, x):
-                continue
-        note = None if c == label else f"{label} signature absent; next choice {c}"
-        return c, float(p[i]), probs, note
-    return label, float(p[classes.index(label)]), probs, "no class passed"
+    """If `label` is checked and its signature is absent, report "unknown" rather than a second
+    guess (user's choice, 2026-11-24: a blocked weak window more often got another wrong label
+    than the right one, docs/batch11_results.md section 4). Unchecked labels pass unchanged.
+    Returns (label, conf, probs, note); conf stays the model's probability for its top label."""
+    conf = float(probs[classes.index(label)])
+    if label not in CHECKED or passes(label, x):
+        return label, conf, probs, None
+    return UNKNOWN, conf, probs, f"{label} signature absent"
 
 
 def _load_thresholds():

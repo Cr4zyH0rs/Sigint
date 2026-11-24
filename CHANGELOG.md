@@ -4,6 +4,13 @@ Version numbers: MINOR = signal batch (new classes and model), PATCH = fixes, to
 sigidwiki-monitor updates within a batch. Each entry links to its results document.
 Format based on https://keepachangelog.com/en/1.1.0/ .
 
+## [0.11.1] - 2026-11-24
+### Changed
+- A WWV, DTMF, HamDRM or STANAG 4539 label whose signature is absent is now reported as
+  "unknown" instead of the model's next choice (user's choice). Wrong mode labels 807 -> 612 on
+  the 100-window test; 98.10% at SNR >= -10 dB, 99.00% at >= 0 dB. docs/batch11_results.md 4a.
+- stress/run_all.py counts "unknown" in the confusion matrix (n_unknown fields).
+
 ## [0.11.0] - 2026-11-24
 ### Added
 - Batch 11 (docs/batch11_results.md): STANAG 4539, STANAG 4529, 3G ALE (STANAG 4538), Link-11

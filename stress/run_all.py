@@ -236,7 +236,8 @@ def t_classifier(n, seed, model_path=None):
     clf = Classifier(model_path)
     rng = np.random.default_rng(seed + 5_000_000)
     C = synth.CLASSES[:clf.model.fc.out_features]
-    conf = np.zeros((len(C), len(C)), int)
+    CU = C + ["unknown"]          # signature checks may report "unknown" (sigint/signature.py)
+    conf = np.zeros((len(C), len(CU)), int)
     rows, times = [], []
     for ci, c in enumerate(C):
         for k in range(n):
@@ -249,7 +250,7 @@ def t_classifier(n, seed, model_path=None):
                 from sigint import signature
                 lab, p, _, _ = signature.reweight(lab, probs, C, x)
             times.append(time.perf_counter() - t)
-            conf[ci, C.index(lab)] += 1
+            conf[ci, CU.index(lab)] += 1
             rows.append(dict(true=c, pred=lab, p=p, snr=snr))
     bins = {}
     for lo in range(-20, 15, 5):
@@ -260,6 +261,7 @@ def t_classifier(n, seed, model_path=None):
     s = clf.featurize(x)
     outs = {clf.predict(s)[0] for _ in range(n)}
     per_class = {c: float(conf[i, i] / conf[i].sum()) for i, c in enumerate(C)}
+    n_unknown = int(conf[:, -1].sum())
     # target set chosen by the user: windows at SNR >= -10 dB
     hi_rows = [r for r in rows if r["snr"] >= -10]
     ge0 = [r for r in rows if r["snr"] >= 0]
@@ -272,13 +274,15 @@ def t_classifier(n, seed, model_path=None):
             errs_ge_m10[k] = errs_ge_m10.get(k, 0) + 1
     # calibration: accuracy among high-confidence predictions
     hi = [r for r in rows if r["p"] >= 0.9]
-    return dict(runs=len(rows), accuracy=float(np.trace(conf) / conf.sum()), per_class=per_class,
+    return dict(runs=len(rows), accuracy=float(np.trace(conf[:, :len(C)]) / conf.sum()), per_class=per_class,
                 acc_snr_ge_m10=sum(r["pred"] == r["true"] for r in hi_rows) / max(1, len(hi_rows)),
                 n_snr_ge_m10=len(hi_rows), per_class_snr_ge_m10=per_class_ge_m10,
                 acc_snr_ge_0=sum(r["pred"] == r["true"] for r in ge0) / max(1, len(ge0)), n_snr_ge_0=len(ge0),
                 sigcheck=os.environ.get("SIGINT_SIGCHECK") == "1",
                 errors_snr_ge_m10=dict(sorted(errs_ge_m10.items(), key=lambda kv: -kv[1])),
-                confusion=dict(labels=C, matrix=conf.tolist()), acc_by_snr_signals_only=bins,
+                confusion=dict(labels=CU, matrix=conf.tolist()), acc_by_snr_signals_only=bins,
+                n_unknown=n_unknown, n_unknown_snr_ge_m10=sum(r["pred"] == "unknown" for r in hi_rows),
+                n_unknown_snr_ge_0=sum(r["pred"] == "unknown" for r in ge0),
                 deterministic=len(outs) == 1, infer_time=timing(times),
                 high_conf_share=len(hi) / len(rows),
                 high_conf_acc=sum(r["true"] == r["pred"] for r in hi) / max(1, len(hi)))

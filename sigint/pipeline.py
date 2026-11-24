@@ -103,7 +103,8 @@ class Pipeline:
             label, conf, probs, _ = acf.reweight(label, probs, CLASSES[:len(probs)], x12k, res.freq_hz)
             res.label, res.confidence = label, conf
         if label in signature.CHECKED:
-            # WWV / DTMF / HamDRM only when their published signature is present (sigint/signature.py)
+            # WWV / DTMF / HamDRM / STANAG 4539 only when their published signature is present;
+            # otherwise "unknown" (sigint/signature.py)
             label, conf, probs, _ = signature.reweight(label, probs, CLASSES[:len(probs)], x12k)
             res.label, res.confidence = label, conf
         t25 = time.perf_counter()
