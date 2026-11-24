@@ -4,6 +4,11 @@ Version numbers: MINOR = signal batch (new classes and model), PATCH = fixes, to
 sigidwiki-monitor updates within a batch. Each entry links to its results document.
 Format based on https://keepachangelog.com/en/1.1.0/ .
 
+## [0.11.2] - 2026-11-24
+### Added
+- docs/setup_ic7300.md: one-page guide to running the ID-only pipeline on your own computer
+  with the IC-7300 (packages, rig menu settings, device name, run command, results, checks).
+
 ## [0.11.1] - 2026-11-24
 ### Changed
 - A WWV, DTMF, HamDRM or STANAG 4539 label whose signature is absent is now reported as

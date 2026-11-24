@@ -23,6 +23,8 @@ jt9 / faster-whisper / fldigi, only for labelling amateur training data.
 - `results/`: JSON output of every stress run
 
 ## Run
+Setup on your own computer with the IC-7300: see `docs/setup_ic7300.md`.
+
 ```
 pip install numpy scipy librosa soundfile sounddevice torch torchvision requests
 sudo apt install wsjtx            # jt9, ft8sim (training data + label mode)
