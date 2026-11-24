@@ -44,9 +44,16 @@ def acc(th, lo=-10):
 
 grid = {"wwv": np.round(np.arange(0, 30.1, 0.5), 2), "dtmf": np.arange(0, 60, 2), "hamdrm": np.round(np.arange(1, 6.01, 0.1), 2),
         "stanag4539": np.r_[-99, np.round(np.arange(0, 15.01, 0.5), 2)],
-        "ale3g": np.r_[-99, np.round(np.arange(-5, 15.01, 0.5), 2)]}   # -99 = check off
+        "ale3g": np.r_[-99, np.round(np.arange(-5, 15.01, 0.5), 2)],   # -99 = check off
+        "selcall_ccir": np.arange(0, 16)}
 base = acc({})
 th = {m: float(g[0]) for m, g in grid.items()}   # start with nothing blocked
+only = os.environ.get("SIGINT_TUNE_ONLY")
+if only:          # keep the other checks at their current thresholds, tune just these
+    th.update({k: float(v) for k, v in sg.THRESH.items() if k in grid})
+    grid = {k: v for k, v in grid.items() if k in only.split(",")}
+    th.update({m: float(g[0]) for m, g in grid.items()})
+    base = acc(th)   # baseline: the kept checks on, the tuned ones off
 for _ in range(3):                     # coordinate ascent
     for m in grid:
         # most windows right at all SNRs, without losing any accuracy at SNR >= -10 dB
@@ -56,12 +63,13 @@ for _ in range(3):                     # coordinate ascent
 res = dict(thresholds=th, acc_ge_m10_without=acc({}), acc_ge_m10_with=acc(th), acc_all_without=acc({}, -99),
            acc_all_with=acc(th, -99), acc_ge_0_without=acc({}, 0), acc_ge_0_with=acc(th, 0), n=len(rows))
 # pass rates of the true classes
-for m in th:
+for m in grid:
     tr = [r for r in rows if r["true"] == m]
     res[f"{m}_true_pass_ge_m10"] = np.mean([r["scores"][m] >= th[m] for r in tr if r["snr"] >= -10]).item()
     res[f"{m}_true_pass_all"] = np.mean([r["scores"][m] >= th[m] for r in tr]).item()
     fp = [r for r in rows if r["top"][0] == m and r["true"] != m]
     res[f"{m}_false_labels_blocked"] = f"{sum(r['scores'][m] < th[m] for r in fp)}/{len(fp)}"
 json.dump({k: v for k, v in th.items()}, open("data/signature_thresholds.json", "w"))
+# (with SIGINT_TUNE_ONLY the untouched checks are written back unchanged)
 json.dump(res, open("results/signature_tune.json", "w"), indent=1)
 print(json.dumps(res, indent=1))

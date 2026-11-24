@@ -4,6 +4,14 @@ Version numbers: MINOR = signal batch (new classes and model), PATCH = fixes, to
 sigidwiki-monitor updates within a batch. Each entry links to its results document.
 Format based on https://keepachangelog.com/en/1.1.0/ .
 
+## [0.12.1] - 2026-11-24
+### Added
+- CCIR selcall signature check (sigidwiki tone table, 70/100 ms tones) in sigint/signature.py:
+  a selcall label needs CCIR tones in sequence, else "unknown". False selcall labels 73 -> 0,
+  wrong mode labels 700 -> 627; 98.33% at SNR >= -10 dB, 99.07% at >= 0 dB.
+  docs/batch14_results.md 4a.
+- stress/tune_signature.py: SIGINT_TUNE_ONLY tunes chosen checks and keeps the others.
+
 ## [0.12.0] - 2026-11-24
 ### Added
 - Batch 14, IC-7100 VHF/UHF (docs/batch14_results.md): APRS (Dire Wolf modulator), POCSAG

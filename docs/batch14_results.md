@@ -92,6 +92,30 @@ The 66-class model `resnet18_modes_b11_10.pt` was fine-tuned for 10 epochs to 71
 - **CCIR selcall is a new weak-signal catch-all.** It got 73 windows of other modes, almost all below −10 dB. It has no signature check yet. Its tones are fixed ([sigidwiki](https://www.sigidwiki.com/wiki/CCIR_Selcall)), so one could be added the same way as for DTMF.
 - **MDC-1200 is mistaken for SSB.** Most of an MDC window is speech, and the ID burst lasts only 0.15 s.
 
+## 4a. CCIR selcall signature check (v0.12.1)
+
+You approved this on 2026-11-24. A `selcall_ccir` label is now kept only if the audio holds CCIR tones in sequence. Otherwise the window is reported as "unknown" (`sigint/signature.py`).
+
+**How the check works:**
+- The tones are from the [sigidwiki table](https://www.sigidwiki.com/wiki/CCIR_Selcall).
+- Every 5 ms, a 40 ms frame is checked: the strongest CCIR tone must stand 3 dB clear of the band floor and of the other CCIR tones.
+- The score counts single-tone segments 30–120 ms long, in runs of at least 3 different tones back to back. A 5-tone call scores 5.
+
+**Threshold: 3.** It was tuned on 40 training-seed windows per class (`results/signature_tune_b14.json`, `results/signature_tune_rows.json`). Any threshold from 1 to 5 blocked all 13 false selcall labels there with no loss at −10 dB and up. 3 is the middle of that range. The test gave the same results at threshold 1.
+
+| 100 windows per mode | Before (v0.12.0) | **With the selcall check** |
+|---|---|---|
+| Windows of other modes called selcall | 73 | **0** |
+| Windows given a wrong mode label | 700 | **627** |
+| Real selcall correct, all SNR / −10 dB and up | 83% / 97.3% | 68% / 91.8% |
+| SNR −10 dB and up | 98.41% | 98.33% |
+| SNR 0 dB and up | 99.11% | 99.07% |
+| Windows reported "unknown" | 169 | 257 (14 at −10 dB and up, 3 at 0 dB and up) |
+
+**The cost:** 4 real selcall windows at −10 dB and up are now "unknown" instead of correct. Of 80 extra selcall windows at 0 dB and up, all passed the check, so the misses are weak or partly cut-off calls.
+
+ID-only end-to-end run: no crashes, nothing decoded or stored, label accuracy 88%.
+
 ## 5. ID-only end-to-end (100 windows)
 
 - No crashes, no decoders run, no decoded text stored, and no prompts containing message text.

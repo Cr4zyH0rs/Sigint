@@ -1,0 +1,20 @@
+{
+ "thresholds": {
+  "wwv": 4.5,
+  "dtmf": 2.0,
+  "hamdrm": 1.5,
+  "stanag4539": 1.5,
+  "ale3g": -99.0,
+  "selcall_ccir": 0.0
+ },
+ "acc_ge_m10_without": 0.9886194952993568,
+ "acc_ge_m10_with": 0.9886194952993568,
+ "acc_all_without": 0.8838028169014085,
+ "acc_all_with": 0.8838028169014085,
+ "acc_ge_0_without": 0.9925803792250618,
+ "acc_ge_0_with": 0.9925803792250618,
+ "n": 2840,
+ "selcall_ccir_true_pass_ge_m10": 1.0,
+ "selcall_ccir_true_pass_all": 1.0,
+ "selcall_ccir_false_labels_blocked": "0/13"
+}

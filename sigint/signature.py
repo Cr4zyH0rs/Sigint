@@ -30,6 +30,14 @@ Added in batch 11, when two new classes became catch-alls (results/classifier_b1
                (https://www.sigidwiki.com/wiki/Automatic_Link_Establishment_(3G_ALE_ARCS)). Test: dB by
                which the 2400 Hz symbol-rate line of the squared envelope stands above 300-3000 Hz.
 
+Added in batch 14 (selcall_ccir became a catch-all, results/classifier_b14_10_seed5.json):
+  CCIR selcall  tones 0=1981 1=1124 2=1197 3=1275 4=1358 5=1446 6=1540 7=1640 8=1747 9=1860
+                E(repeat)=2110 Hz, 100 ms (CCIR-1) or 70 ms (CCIR-2) per tone
+                (https://www.sigidwiki.com/wiki/CCIR_Selcall). Test: per 40 ms frame (5 ms hop) the
+                strongest CCIR tone must stand 3 dB clear of the band floor and of the other CCIR
+                tones; score = number of single-tone segments lasting 30-120 ms of hops, counting only
+                segments in runs of >= 3 back-to-back different tones (a 5-tone call has 5).
+
 Thresholds are set by stress/tune_signature.py on training-seed windows (not the test windows).
 """
 from __future__ import annotations
@@ -38,8 +46,8 @@ import numpy as np
 from scipy.signal import butter, sosfiltfilt
 
 FS = 12000
-THRESH = {"wwv": 3.0, "dtmf": 2, "hamdrm": 3.0, "stanag4539": 0.0, "ale3g": 0.0}  # overwritten by tuning
-CHECKED = ("wwv", "dtmf", "hamdrm", "stanag4539", "ale3g")
+THRESH = {"wwv": 3.0, "dtmf": 2, "hamdrm": 3.0, "stanag4539": 0.0, "ale3g": 0.0, "selcall_ccir": 0}  # overwritten by tuning
+CHECKED = ("wwv", "dtmf", "hamdrm", "stanag4539", "ale3g", "selcall_ccir")
 
 
 def _bp(x, f, half_bw):
@@ -135,8 +143,56 @@ def ale3g_score(x: np.ndarray) -> float:
     return float(10 * np.log10(p[k].max() / (np.median(p[band]) + 1e-30)))
 
 
+CCIR_TONES = np.array([1981, 1124, 1197, 1275, 1358, 1446, 1540, 1640, 1747, 1860, 2110], float)
+
+
+def selcall_score(x: np.ndarray, margin_db: float = 3.0) -> int:
+    win, hop = 480, 60
+    w = np.hanning(win)
+    fr = np.fft.rfftfreq(1024, 1 / FS)
+    ti = [int(np.argmin(abs(fr - f))) for f in CCIR_TONES]
+    band = (fr > 900) & (fr < 2300)
+    lim = 10 ** (margin_db / 10)
+    seq = []                                   # per frame: tone index or -1
+    for s in range(0, len(x) - win, hop):
+        P = np.abs(np.fft.rfft(x[s:s + win] * w, 1024)) ** 2
+        t = P[ti]
+        a = int(np.argmax(t))
+        ok = t[a] > lim * (np.median(P[band]) + 1e-12) and t[a] > lim * np.max(np.delete(t, a))
+        seq.append(a if ok else -1)
+    segs = []                                  # (tone, start frame, length)
+    i = 0
+    while i < len(seq):
+        j = i
+        while j < len(seq) and seq[j] == seq[i]:
+            j += 1
+        segs.append((seq[i], i, j - i))
+        i = j
+    good = [s[0] >= 0 and 6 <= s[2] <= 24 for s in segs]       # 30-120 ms of 5 ms hops (40 ms frames)
+    score, run, prev_end, prev_tone = 0, 0, None, None
+    for g, (tone, st, ln) in zip(good, segs):
+        if g and prev_end is not None and st - prev_end <= 3 and tone != prev_tone:
+            run += 1
+        elif g:
+            if run >= 3:
+                score += run
+            run = 1
+        else:
+            if tone == -1 and ln <= 3:         # a short blank between tones keeps the run
+                continue
+            if run >= 3:
+                score += run
+            run = 0
+        if g:
+            prev_end, prev_tone = st + ln, tone
+    if run >= 3:
+        score += run
+    return score
+
+
 SCORES = {"wwv": wwv_score, "dtmf": dtmf_score, "hamdrm": hamdrm_score,
-          "stanag4539": stanag4539_score, "ale3g": ale3g_score}
+          "stanag4539": stanag4539_score, "ale3g": ale3g_score,
+          "selcall_ccir": selcall_score}
 
 
 def passes(label: str, x: np.ndarray) -> bool:
