@@ -181,6 +181,10 @@ OCCUPANCY_ARGS["stanag4481"] = OCCUPANCY_ARGS["pactor1"]
 for _m in ("aprs", "same", "mdc1200", "selcall_ccir", "pocsag"):
     OCCUPANCY_ARGS[_m] = _FM_WIDE
 
+# Batch 15: digital voice heard on FM is baseband 4FSK/GMSK, spread over the whole audio band
+for _m in ("dmr", "p25", "dstar", "ysf", "nxdn"):
+    OCCUPANCY_ARGS[_m] = _FM_WIDE
+
 
 def occupancy_for(label: str, x: np.ndarray):
     fc, bw, pk = occupancy(x, **OCCUPANCY_ARGS.get(label, {}))

@@ -1,6 +1,6 @@
 # Setup guide: running sigint on your own computer with the IC-7300
 
-Version 0.12.0, written 2026-11-24. The pipeline only identifies signals. It names the mode and
+Version 0.13.0, updated 2026-11-25. The pipeline only identifies signals. It names the mode and
 logs the time, audio offset, bandwidth and confidence. It never decodes or stores message text.
 
 ## 1. Get the code and the model
@@ -9,7 +9,7 @@ logs the time, audio offset, bandwidth and confidence. It never decodes or store
 git clone https://github.com/Cr4zyH0rs/Sigint.git sigint
 cd sigint
 ```
-The newest model, `data/resnet18_modes_b14_10.pt` (71 classes), is in the repo.
+The newest model, `data/resnet18_modes_b15_10.pt` (76 classes), is in the repo.
 
 ## 2. Install Python packages
 
@@ -43,6 +43,11 @@ Useful checks:
 - APRS on 144.390 MHz (North America) or 144.800 MHz (Europe) ([sigidwiki](https://www.sigidwiki.com/wiki/APRS)).
 - NOAA Weather Radio alerts.
 
+Digital voice (batch 15) is identified from the FM audio, so leave the radio in FM, not DV:
+- DMR, P25 Phase 1, D-STAR, Yaesu System Fusion and NXDN48 are recognised by their sound. Nothing is decoded.
+- Local repeaters and hotspots are the easiest test signals.
+- DMR and System Fusion are sometimes mixed up (see `docs/batch15_results.md`).
+
 ## 4. Find the audio device name
 
 ```
@@ -53,12 +58,12 @@ This lists every audio device ([sounddevice docs](https://python-sounddevice.rea
 ## 5. Run it
 
 ```
-python -m sigint.pipeline --model data/resnet18_modes_b14_10.pt --device "USB Audio CODEC" --dial-hz 14074000 --no-llm --db sigint.sqlite
+python -m sigint.pipeline --model data/resnet18_modes_b15_10.pt --device "USB Audio CODEC" --dial-hz 14074000 --no-llm --db sigint.sqlite
 ```
 - Every 15 s on the UTC boundary, it logs one window: the mode label, confidence, audio offset (Hz), bandwidth and rough SNR.
 - `--dial-hz` is the rig's dial frequency. It helps tell FT8 from JS8, and JT9 from WSPR and FST4 (`sigint/bandplan.py`). Change it when you change band.
 - `--no-llm` skips the explanation. To get short plain-English notes instead, install [Ollama](https://ollama.com) and run `ollama pull llama3.2:3b`. Then leave out `--no-llm`. The pipeline calls Ollama at `http://localhost:11434`.
-- To test without the rig: `python -m sigint.pipeline --model data/resnet18_modes_b14_10.pt --no-llm --wav file.wav`.
+- To test without the rig: `python -m sigint.pipeline --model data/resnet18_modes_b15_10.pt --no-llm --wav file.wav`.
 
 ## 6. Where results go
 
@@ -77,7 +82,7 @@ sqlite3 sigint.sqlite "select datetime(utc_start,'unixepoch'), label, round(conf
 - Tune 14.074 MHz USB-D. That is the 20 m FT8 frequency ([sigidwiki: FT8](https://www.sigidwiki.com/wiki/FT8), [M0PWX list](https://www.qsl.net/m0pwx/modes-and-freq.htm)). Most windows should say `ft8` with confidence near 1.
 - WWV on 10 or 15 MHz ([NIST](https://www.nist.gov/pml/div688/grp40/wwv_format)) should say `wwv` when the ticks are audible.
 
-**What to expect from the tests on synthetic and recorded test audio** (`docs/batch11_results.md`):
+**What to expect from the tests on synthetic and recorded test audio** (`docs/batch11_results.md`, `docs/batch15_results.md`):
 - About 99% correct at 0 dB SNR and up.
 - About 98% correct at −10 dB and up.
 - Below −10 dB, many windows are wrong.

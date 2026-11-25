@@ -1,0 +1,173 @@
+{
+ "dmr | flat": {
+  "transmissions_detected": 10,
+  "transmissions": 10,
+  "sync_lines": 91,
+  "syncs_sent": 451,
+  "sync_types": [
+   "+DMRd",
+   "+DMRv"
+  ]
+ },
+ "dmr | de-emphasis, 20-3000 Hz": {
+  "transmissions_detected": 10,
+  "transmissions": 10,
+  "sync_lines": 79,
+  "syncs_sent": 451,
+  "sync_types": [
+   "+DMRd",
+   "+DMRv"
+  ]
+ },
+ "dmr | 300-3000 Hz": {
+  "transmissions_detected": 7,
+  "transmissions": 10,
+  "sync_lines": 11,
+  "syncs_sent": 451,
+  "sync_types": [
+   "+DMRd",
+   "+DMRv"
+  ]
+ },
+ "dmr_direct | flat": {
+  "transmissions_detected": 10,
+  "transmissions": 10,
+  "sync_lines": 107,
+  "syncs_sent": 107,
+  "sync_types": [
+   "+DMRd",
+   "+DMRv"
+  ]
+ },
+ "dmr_direct | de-emphasis, 20-3000 Hz": {
+  "transmissions_detected": 2,
+  "transmissions": 10,
+  "sync_lines": 3,
+  "syncs_sent": 107,
+  "sync_types": [
+   "+DMRd",
+   "+DMRv"
+  ]
+ },
+ "dmr_direct | 300-3000 Hz": {
+  "transmissions_detected": 10,
+  "transmissions": 10,
+  "sync_lines": 44,
+  "syncs_sent": 107,
+  "sync_types": [
+   "+DMRd",
+   "+DMRv"
+  ]
+ },
+ "dstar | flat": {
+  "transmissions_detected": 10,
+  "transmissions": 10,
+  "sync_lines": 10,
+  "syncs_sent": 10,
+  "sync_types": [
+   "+D-STAR",
+   "+D-STAR_HD"
+  ]
+ },
+ "dstar | de-emphasis, 20-3000 Hz": {
+  "transmissions_detected": 6,
+  "transmissions": 10,
+  "sync_lines": 6,
+  "syncs_sent": 10,
+  "sync_types": [
+   "+D-STAR"
+  ]
+ },
+ "dstar | 300-3000 Hz": {
+  "transmissions_detected": 10,
+  "transmissions": 10,
+  "sync_lines": 10,
+  "syncs_sent": 10,
+  "sync_types": [
+   "-D-STAR"
+  ]
+ },
+ "ysf | flat": {
+  "transmissions_detected": 10,
+  "transmissions": 10,
+  "sync_lines": 294,
+  "syncs_sent": 300,
+  "sync_types": [
+   "+YSF"
+  ]
+ },
+ "ysf | de-emphasis, 20-3000 Hz": {
+  "transmissions_detected": 2,
+  "transmissions": 10,
+  "sync_lines": 2,
+  "syncs_sent": 300,
+  "sync_types": [
+   "+YSF"
+  ]
+ },
+ "ysf | 300-3000 Hz": {
+  "transmissions_detected": 3,
+  "transmissions": 10,
+  "sync_lines": 4,
+  "syncs_sent": 300,
+  "sync_types": [
+   "+YSF"
+  ]
+ },
+ "nxdn | flat": {
+  "transmissions_detected": 10,
+  "transmissions": 10,
+  "sync_lines": 10,
+  "syncs_sent": 371,
+  "sync_types": [
+   "+NXDN48"
+  ]
+ },
+ "nxdn | de-emphasis, 20-3000 Hz": {
+  "transmissions_detected": 7,
+  "transmissions": 10,
+  "sync_lines": 8,
+  "syncs_sent": 371,
+  "sync_types": [
+   "+NXDN48",
+   "-NXDN48"
+  ]
+ },
+ "nxdn | 300-3000 Hz": {
+  "transmissions_detected": 10,
+  "transmissions": 10,
+  "sync_lines": 11,
+  "syncs_sent": 371,
+  "sync_types": [
+   "+NXDN48",
+   "-NXDN48"
+  ]
+ },
+ "p25 | flat": {
+  "transmissions_detected": 10,
+  "transmissions": 10,
+  "sync_lines": 180,
+  "syncs_sent": 180,
+  "sync_types": [
+   "own matched filter"
+  ]
+ },
+ "p25 | de-emphasis, 20-3000 Hz": {
+  "transmissions_detected": 3,
+  "transmissions": 10,
+  "sync_lines": 4,
+  "syncs_sent": 180,
+  "sync_types": [
+   "own matched filter"
+  ]
+ },
+ "p25 | 300-3000 Hz": {
+  "transmissions_detected": 1,
+  "transmissions": 10,
+  "sync_lines": 1,
+  "syncs_sent": 180,
+  "sync_types": [
+   "own matched filter"
+  ]
+ }
+}

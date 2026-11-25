@@ -53,7 +53,9 @@ CLASSES = ["ft8", "cw", "rtty", "psk31", "ssb", "noise",
            # batch 11 (sigint/synth_b11.py, from Shoc and sigidwiki parameters)
            "stanag4539", "stanag4529", "ale3g", "link11_slew", "stanag4481",
            # batch 14 (IC-7100 VHF/UHF FM; sigint/synth_b14.py)
-           "aprs", "pocsag", "same", "mdc1200", "selcall_ccir"]
+           "aprs", "pocsag", "same", "mdc1200", "selcall_ccir",
+           # batch 15 (digital voice heard on FM; sigint/synth_b15.py)
+           "dmr", "p25", "dstar", "ysf", "nxdn"]
 
 # --------------------------------------------------------------------------
 # Noise / SNR
@@ -414,7 +416,10 @@ def generate(label: str, rng: np.random.Generator, snr_db: float):
     elif label in CLASSES[13:21] or label in ("sitorb", "psk8", "ifkp", "pskr", "mcpsk", "ofdm"):
         from . import synth_fldigi
         x, meta = synth_fldigi.generate(label, rng, snr_db)
-    elif label in CLASSES[66:]:
+    elif label in CLASSES[71:]:
+        from . import synth_b15
+        x, meta = synth_b15.GENERATORS[label](rng, snr_db)
+    elif label in CLASSES[66:71]:
         from . import synth_b14
         x, meta = synth_b14.GENERATORS[label](rng, snr_db)
     elif label in CLASSES[61:66]:

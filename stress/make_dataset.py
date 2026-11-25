@@ -40,40 +40,45 @@ if __name__ == "__main__":
         os.environ["SIGINT_FLDIGI_SPLIT"] = "train"
         build(n, 9, -16, 15, "data/train_mc.npz")
         build(100, 9 * 10**7, -16, 15, "data/val_mc.npz")
+    elif len(sys.argv) > 2 and sys.argv[2] == "mc15":
+        os.environ["SIGINT_FLDIGI_SPLIT"] = "train"
+        new = synth.CLASSES[71:]
+        build(n, 15, -16, 15, "data/train_mc_b15.npz", new)
+        build(100, 15 * 10**7, -16, 15, "data/val_mc_b15.npz", new)
     elif len(sys.argv) > 2 and sys.argv[2] == "mc14":
         os.environ["SIGINT_FLDIGI_SPLIT"] = "train"
-        new = synth.CLASSES[66:]
+        new = synth.CLASSES[66:71]
         build(n, 14, -16, 15, "data/train_mc_b14.npz", new)
         build(100, 14 * 10**7, -16, 15, "data/val_mc_b14.npz", new)
     elif len(sys.argv) > 2 and sys.argv[2] == "mc11":
         os.environ["SIGINT_FLDIGI_SPLIT"] = "train"
-        new = synth.CLASSES[61:]
+        new = synth.CLASSES[61:66]
         build(n, 13, -16, 15, "data/train_mc_b11.npz", new)
         build(100, 13 * 10**7, -16, 15, "data/val_mc_b11.npz", new)
     elif len(sys.argv) > 2 and sys.argv[2] == "mc10":
         os.environ["SIGINT_FLDIGI_SPLIT"] = "train"
-        new = synth.CLASSES[55:]
+        new = synth.CLASSES[55:61]
         build(n, 12, -16, 15, "data/train_mc_b10.npz", new)
         build(100, 12 * 10**7, -16, 15, "data/val_mc_b10.npz", new)
     elif len(sys.argv) > 2 and sys.argv[2] == "mc9":
         os.environ["SIGINT_FLDIGI_SPLIT"] = "train"
-        new = synth.CLASSES[48:]
+        new = synth.CLASSES[48:55]
         build(n, 11, -16, 15, "data/train_mc_b9.npz", new)
         build(100, 11 * 10**7, -16, 15, "data/val_mc_b9.npz", new)
     elif len(sys.argv) > 2 and sys.argv[2] == "mc8":
         os.environ["SIGINT_FLDIGI_SPLIT"] = "train"
-        new = synth.CLASSES[43:]
+        new = synth.CLASSES[43:48]
         build(n, 10, -16, 15, "data/train_mc_b8.npz", new)
         build(100, 10 * 10**7, -16, 15, "data/val_mc_b8.npz", new)
     elif len(sys.argv) > 2 and sys.argv[2] == "mc7":
         os.environ["SIGINT_FLDIGI_SPLIT"] = "train"
-        new = synth.CLASSES[38:]
+        new = synth.CLASSES[38:43]
         build(n, 9, -16, 15, "data/train_mc_b7.npz", new)
         build(100, 9 * 10**7, -16, 15, "data/val_mc_b7.npz", new)
     elif len(sys.argv) > 2 and sys.argv[2] == "mc6":
         # batch 6 classes only, 3-channel; appended to train_mc/val_mc at training time
         os.environ["SIGINT_FLDIGI_SPLIT"] = "train"
-        new = synth.CLASSES[33:]
+        new = synth.CLASSES[33:38]
         build(n, 9, -16, 15, "data/train_mc_b6.npz", new)
         build(100, 9 * 10**7, -16, 15, "data/val_mc_b6.npz", new)
     elif len(sys.argv) > 2 and sys.argv[2] == "batch5":

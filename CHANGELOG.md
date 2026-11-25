@@ -4,6 +4,19 @@ Version numbers: MINOR = signal batch (new classes and model), PATCH = fixes, to
 sigidwiki-monitor updates within a batch. Each entry links to its results document.
 Format based on https://keepachangelog.com/en/1.1.0/ .
 
+## [0.13.0] - 2026-11-25
+### Added
+- Batch 15, digital voice heard on FM (docs/batch15_results.md): DMR, P25 Phase 1, D-STAR,
+  Yaesu System Fusion and NXDN48 as 4FSK/GMSK baseband through an assumed FM audio chain.
+  Rates and timing from ETSI TS 102 361-1, sigidwiki and Wikipedia; sync words, filters and
+  levels from the MMDVM / MMDVMHost source. Syncs checked with DSDcc (10/10 transmissions per
+  mode on clean audio; P25 by our own matcher). 76-class model data/resnet18_modes_b15_10.pt:
+  97.81% at SNR >= -10 dB, 98.83% at >= 0 dB with signature checks. YSF <-> DMR is the main
+  confusion (21 errors at >= -10 dB).
+### Changed
+- The 71-class model is replaced by the 76-class one; setup guide points to it.
+- stress/make_dataset.py: older batch modes use fixed class ranges.
+
 ## [0.12.1] - 2026-11-24
 ### Added
 - CCIR selcall signature check (sigidwiki tone table, 70/100 ms tones) in sigint/signature.py:
